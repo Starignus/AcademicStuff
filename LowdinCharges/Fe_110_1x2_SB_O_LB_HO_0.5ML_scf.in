@@ -1,0 +1,69 @@
+&control
+    calculation='scf'
+    restart_mode='from_scratch',
+    pseudo_dir = '/work/e05/e05/ablar/QE_PSEUDO',
+    outdir='./results_Fe_110_1x2_SB_O_LB_HO_0.5ML_dos'
+    prefix='Fe_110_1x2_SB_O_LB_HO_0.5ML'
+    wf_collect = .true.
+    tprnfor = .true.
+    tstress=.true.
+    nstep=50000
+    etot_conv_thr=1.0D-5
+    forc_conv_thr=1.0D-4
+    verbosity='high'
+    disk_io='default'
+    max_seconds=86000
+
+ /
+ &system
+    ibrav=0,
+    celldm(1)=1.889726878
+    nat=13 ,
+    ntyp= 3,
+    ecutwfc = 95, ecutrho = 800,
+    occupations='smearing', smearing='mv', degauss=0.04,
+    nspin=2,
+    starting_magnetization(1)= 0.6
+    input_DFT='PBE'
+    lda_plus_u = .true.,
+    Hubbard_U(1) = 1.d-10,
+    nbnd=106,
+
+ /
+ &electrons
+    diagonalization='david'
+    electron_maxstep=1000
+    conv_thr = 1.0e-8
+    mixing_beta = 0.5
+    mixing_mode='local-TF'
+ /
+ &ions
+ /
+ &cell
+   press=0.0
+   press_conv_thr=0.1
+ /
+ATOMIC_SPECIES
+Fe 55.85 Fe.pbe-spn-kjpaw_psl.0.2.1.UPF
+O 16 O.pbe-n-kjpaw_psl.0.1.UPF
+H  1  H.pbe-kjpaw_psl.0.1.upf
+ATOMIC_POSITIONS (angstrom)
+Fe       0.118067230   0.195122620  -4.073502307
+Fe      -0.698707215   2.509468120  -4.073922725
+Fe       0.935702305   1.351721400  -2.086349543
+Fe       1.754231300  -0.961181309  -2.082078963
+Fe       0.119977498   0.195822699  -0.096715237
+Fe      -0.698235181   2.509041186  -0.095917228
+Fe       0.944343910   1.344709311   1.899347203
+Fe       1.763224307  -0.963709326   1.895911378
+Fe       0.055700149   0.173913028   3.925693259
+Fe      -0.597035211   2.505537546   3.894401412
+H        1.265995676  -0.690687202   4.779932276
+O       -0.124528525   1.399961084   5.473991792
+H        0.785005912   1.482745239   5.876548682
+CELL_PARAMETERS
+   0.245302215237E+01   0.000000000000E+00   0.000000000000E+00
+  -0.163534810158E+01   0.462546292891E+01   0.000000000000E+00
+   0.000000000000E+00   0.000000000000E+00   20.50000000000E+00
+K_POINTS (automatic)
+12 6 1 0 0 0
