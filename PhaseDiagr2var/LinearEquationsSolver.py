@@ -38,11 +38,13 @@ print "KFe3S4Gre:", KFe3S4Gre
 # np.linspace(start value, end value sequence, total number of points) 
 # evenly spaced values over a specific interval with certain number of points
 # np.linspace(0, 10, 11) --> array([0., 1.,.., 10.0 ])
-x1 = np.linspace(-160, 55)
+x1 = np.linspace(-160,0)
 y1 = KFeSMack-x1
 y2 = (KFeS2Marc -x1)/2
 y3 = (KFe3S4Gre - 3*x1)/4 
 
+plt.clf() # Clear an existing figure
+plt.ylim(-100, 0)
 plt.plot(x1, y1, label='Mackinawite')
 plt.plot(x1, y2, label='Marcasite')
 plt.plot(x1, y3, label='Greigite')
@@ -50,6 +52,8 @@ plt.legend(loc='best')
 plt.xlabel(u'$\mu_{Fe}$', fontsize=15)
 plt.ylabel(u'$\mu_{S}$', fontsize=15)
 plt.grid(True)
+plt.savefig('PhaseDiagrMackMarcGre.pdf')
+plt.savefig('PhaseDiagrMackMarcGre.png')
 plt.show()
 
 # Rewriting the equations 
