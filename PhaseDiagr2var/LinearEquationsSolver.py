@@ -56,28 +56,28 @@ print "soluton of equation (1)-(3):", x23, T23
 
 # Plotting
 # np.linspace(start value sequence, end value sequence) evenly spaced over a specific interval
-y1 = np.linspace(-115, 60)
+x1 = np.linspace(-130, 120)
 # np.arange(start, stop, step) Return evenly spaced values within an interval 
-y2 = np.arange(-115,  60, 5 )
-x1 = KFeSMack -y1
-x2 = KFeS2Marc -2*y1
-x3 = (KFe3S4Gre - 4*y1)/3 
+x2 = np.arange(-130,  120, 5 )
+y1 = KFeSMack-x1
+y2 = (KFeS2Marc -x1)/2
+y3 = (KFe3S4Gre - 3*x1)/4 
 
-x12 = KFeSMack -y2
-x22 = KFeS2Marc -2*y2
-x32 = (KFe3S4Gre - 4*y2)/3 
+y12 = KFeSMack-x2
+y22 = (KFeS2Marc -x2)/2
+y32 = (KFe3S4Gre - 3*x2)/4 
 
 
-plt.plot(x1)
-plt.plot(x2)
-plt.plot(x3)
+plt.plot(y1)
+plt.plot(y2)
+plt.plot(y3)
 plt.xlabel('M Fe')
 plt.ylabel('M S')
 plt.grid(True)
 plt.show()
 
-plt.plot(x12)
-plt.plot(x22)
-plt.plot(x32)
+plt.plot(y12)
+plt.plot(y22)
+plt.plot(y32)
 plt.grid(True)
 plt.show()
