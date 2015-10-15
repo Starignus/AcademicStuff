@@ -17,7 +17,60 @@ KFeSMack = EFeSMack - mFe -mS
 KFeS2Marc = EFeS2Marc - mFe - 2*mS
 KFe3S4Gre = EFe3S4Gre - 3*mFe - 4*mS
 
+print "KFeSMack:", KFeSMack 
+print "KFeS2Marc:", KFeS2Marc
+print "KFe3S4Gre:", KFe3S4Gre
+
 # Equations:
+# KFeSMack = xFe + yS  (1)
+# KFeS2Marc = xFe + 2*yS  (2)
+# KFe3S4Gre =  3*xFe + 4*yS  (3)
+
+# Rewriting the equations 
+# yS= y1, yS= y2, yS= y3
+
+# Plotting
+
+# np.arange(start, stop, step increment)  
+# evenly spaced values over a specific interval with certain increment 
+# np.arange(0.0, 10, 1) --> array([0., 1.,.., 9 ])
+
+# np.linspace(start value, end value sequence, total number of points) 
+# evenly spaced values over a specific interval with certain number of points
+# np.linspace(0, 10, 11) --> array([0., 1.,.., 10.0 ])
+x1 = np.linspace(-160, 55)
+y1 = KFeSMack-x1
+y2 = (KFeS2Marc -x1)/2
+y3 = (KFe3S4Gre - 3*x1)/4 
+
+plt.plot(x1, y1, label='Mackinawite')
+plt.plot(x1, y2, label='Marcasite')
+plt.plot(x1, y3, label='Greigite')
+plt.legend(loc='best')
+plt.xlabel(u'$\mu_{Fe}$', fontsize=15)
+plt.ylabel(u'$\mu_{S}$', fontsize=15)
+plt.grid(True)
+plt.show()
+
+# Rewriting the equations 
+# xFe= x1, xFe= x2, xFe= x3
+#y = np.linspace(-160, 0)
+#x1 = y - KFeSMack 
+#x2 = KFeS2Marc -2*y
+#x3 = (KFe3S4Gre - 4*y)/3
+
+#plt.xlim(-100, 80)
+#plt.plot(x1, y, label='Mackinawite')
+#plt.plot(x2, y, label='Marcasite')
+#plt.plot(x3, y, label='Greigite')
+#plt.legend(loc='best')
+#plt.xlabel(u'$\mu_{S}$', fontsize=15)
+#plt.ylabel(u'$\mu_{Fe}$', fontsize=15)
+#plt.grid(True)
+#plt.show()
+
+
+# Solving Equations:
 # KFeSMack = xFe + yS  (1)
 # KFeS2Marc = xFe + 2*yS  (2)
 # KFe3S4Gre =  3*xFe + 4*yS  (3)
@@ -52,32 +105,4 @@ T23 = np.allclose(np.dot(A12, x23), b23)
 
 print "soluton of equation (1)-(2):", x12, T12 
 print "soluton of equation (1)-(3):", x13, T13
-print "soluton of equation (1)-(3):", x23, T23 
-
-# Plotting
-# np.linspace(start value sequence, end value sequence) evenly spaced over a specific interval
-x1 = np.linspace(-130, 120)
-# np.arange(start, stop, step) Return evenly spaced values within an interval 
-x2 = np.arange(-130,  120, 5 )
-y1 = KFeSMack-x1
-y2 = (KFeS2Marc -x1)/2
-y3 = (KFe3S4Gre - 3*x1)/4 
-
-y12 = KFeSMack-x2
-y22 = (KFeS2Marc -x2)/2
-y32 = (KFe3S4Gre - 3*x2)/4 
-
-
-plt.plot(y1)
-plt.plot(y2)
-plt.plot(y3)
-plt.xlabel('M Fe')
-plt.ylabel('M S')
-plt.grid(True)
-plt.show()
-
-plt.plot(y12)
-plt.plot(y22)
-plt.plot(y32)
-plt.grid(True)
-plt.show()
+print "soluton of equation (2)-(3):", x23, T23 
