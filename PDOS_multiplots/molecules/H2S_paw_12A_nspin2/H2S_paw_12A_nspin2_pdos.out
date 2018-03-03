@@ -1,0 +1,161 @@
+Defaulting to ethernet
+No MPI process pinning
+Starting MPD ring...
+PBS has allocated the following nodes:
+cx1-9-19-3
+cx1-9-19-3
+cx1-9-19-3
+cx1-9-19-3
+cx1-9-19-3
+cx1-9-19-3
+cx1-9-19-3
+cx1-9-19-3
+cx1-9-19-3
+cx1-9-19-3
+cx1-9-19-3
+cx1-9-19-3
+cx1-9-19-3
+cx1-9-19-3
+cx1-9-19-3
+cx1-9-19-3
+---
+mpiexec.intel -genv I_MPI_DEVICE ssm -genv I_MPI_DEBUG 0 -genv I_MPI_PIN yes -genv I_MPI_PIN_MODE lib -genv I_MPI_FALLBACK_DEVICE disable -genv DAPL_MAX_CM_RETRIES 500 -genv DAPL_MAX_CM_RESPONSE_TIME 300 -genv I_MPI_DAPL_CONNECTION_TIMEOUT 300 -machinefile /tmp/pbs.355536.cx1b/tmp.83ZGoIT9cu -n 16 -wdir /work/ablancar/QE/Work/PBE_work/H2S_paw_12A_nspin2/PDOS/H2S_paw_12A_nspin2 projwfc.x
+
+Job output begins below
+-----------------------
+
+     Program PROJWFC v.5.0.2 (svn rev. 9392) starts on 11Sep2015 at 10:17:11 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote.php
+
+     Parallel version (MPI), running on    16 processors
+     R & G space division:  proc/nbgrp/npool/nimage =      16
+
+   Info: using nr1, nr2, nr3 values from input
+
+   Info: using nr1s, nr2s, nr3s values from input
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation      = PBE ( 1 4 3 4 0)
+     EXX-fraction              =        0.00
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+               file H.pbe-kjpaw_psl.0.1.upf: wavefunction(s)  1S renormalized
+               file S.pbe-n-kjpaw_psl.0.1.UPF: wavefunction(s)  3P renormalized
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         572     273     68                41276    13531    1691
+     Max         573     274     70                41279    13554    1694
+     Sum        9153    4373   1093               660429   216679   27081
+ 
+
+     Gaussian broadening (read from input): ngauss,degauss=   0    0.010000
+
+
+     Calling pprojwave .... 
+ 
+  Problem Sizes 
+  natomwfc =            6
+  nbnd     =           10
+  nkstot   =            2
+  npwx     =         1694
+  nkb      =           12
+ 
+
+     Atomic states used for projection
+     (read from pseudopotential files):
+
+     state #   1: atom   1 (S  ), wfc  1 (l=0 m= 1)
+     state #   2: atom   1 (S  ), wfc  2 (l=1 m= 1)
+     state #   3: atom   1 (S  ), wfc  2 (l=1 m= 2)
+     state #   4: atom   1 (S  ), wfc  2 (l=1 m= 3)
+     state #   5: atom   2 (H  ), wfc  1 (l=0 m= 1)
+     state #   6: atom   3 (H  ), wfc  1 (l=0 m= 1)
+
+ k =   0.0000000000  0.0000000000  0.0000000000
+     e =   -17.47639 eV
+     psi = 0.696*[#   1]+0.133*[#   5]+0.133*[#   6]+0.023*[#   4]+
+    |psi|^2 = 0.985
+     e =    -9.89136 eV
+     psi = 0.540*[#   2]+0.214*[#   5]+0.214*[#   6]+
+    |psi|^2 = 0.968
+     e =    -8.06084 eV
+     psi = 0.704*[#   4]+0.152*[#   1]+0.062*[#   5]+0.062*[#   6]+
+    |psi|^2 = 0.980
+     e =    -5.21458 eV
+     psi = 0.994*[#   3]+
+    |psi|^2 = 0.994
+     e =    -0.75253 eV
+     psi = 0.174*[#   5]+0.174*[#   6]+0.090*[#   4]+0.065*[#   1]+
+    |psi|^2 = 0.502
+     e =     0.59266 eV
+     psi = 0.412*[#   2]+0.223*[#   5]+0.223*[#   6]+
+    |psi|^2 = 0.858
+     e =     1.75609 eV
+     psi = 0.053*[#   4]+0.033*[#   5]+0.033*[#   6]+0.024*[#   1]+
+    |psi|^2 = 0.143
+     e =     2.13587 eV
+     psi = 0.020*[#   4]+0.009*[#   5]+0.009*[#   6]+0.005*[#   1]+
+    |psi|^2 = 0.044
+     e =     3.37898 eV
+     psi = 0.017*[#   5]+0.017*[#   6]+
+    |psi|^2 = 0.033
+     e =     3.42239 eV
+     psi = 0.016*[#   5]+0.016*[#   6]+0.003*[#   1]+0.003*[#   4]+
+    |psi|^2 = 0.037
+
+ k =   0.0000000000  0.0000000000  0.0000000000
+     e =   -17.47641 eV
+     psi = 0.696*[#   1]+0.133*[#   5]+0.133*[#   6]+0.023*[#   4]+
+    |psi|^2 = 0.985
+     e =    -9.89139 eV
+     psi = 0.540*[#   2]+0.214*[#   5]+0.214*[#   6]+
+    |psi|^2 = 0.968
+     e =    -8.06082 eV
+     psi = 0.704*[#   4]+0.152*[#   1]+0.062*[#   5]+0.062*[#   6]+
+    |psi|^2 = 0.980
+     e =    -5.21462 eV
+     psi = 0.994*[#   3]+
+    |psi|^2 = 0.994
+     e =    -0.75248 eV
+     psi = 0.174*[#   5]+0.174*[#   6]+0.090*[#   4]+0.065*[#   1]+
+    |psi|^2 = 0.502
+     e =     0.59255 eV
+     psi = 0.412*[#   2]+0.223*[#   5]+0.223*[#   6]+
+    |psi|^2 = 0.858
+     e =     1.75609 eV
+     psi = 0.053*[#   4]+0.033*[#   5]+0.033*[#   6]+0.024*[#   1]+
+    |psi|^2 = 0.142
+     e =     2.13590 eV
+     psi = 0.020*[#   4]+0.009*[#   5]+0.009*[#   6]+0.005*[#   1]+
+    |psi|^2 = 0.044
+     e =     3.37901 eV
+     psi = 0.017*[#   5]+0.017*[#   6]+
+    |psi|^2 = 0.033
+     e =     3.42288 eV
+     psi = 0.016*[#   5]+0.016*[#   6]+0.003*[#   1]+0.003*[#   4]+
+    |psi|^2 = 0.037
+
+Lowdin Charges: 
+
+     Atom #   1: total charge =   6.2189, s =  1.6964, p =  4.5225, 
+                 spin up      =   3.1095, s =  0.8482, p =  2.2613, 
+                 spin down    =   3.1095, s =  0.8482, p =  2.2613, 
+                 polarization =  -0.0000, s = -0.0000, p = -0.0000, 
+     Atom #   2: total charge =   0.8178, s =  0.8178, p =  0.0000, 
+                 spin up      =   0.4089, s =  0.4089, p =  0.0000, 
+                 spin down    =   0.4089, s =  0.4089, p =  0.0000, 
+                 polarization =   0.0000, s =  0.0000, p =  0.0000, 
+     Atom #   3: total charge =   0.8178, s =  0.8178, p =  0.0000, 
+                 spin up      =   0.4089, s =  0.4089, p =  0.0000, 
+                 spin down    =   0.4089, s =  0.4089, p =  0.0000, 
+                 polarization =   0.0000, s =  0.0000, p =  0.0000, 
+     Spilling Parameter:   0.0182

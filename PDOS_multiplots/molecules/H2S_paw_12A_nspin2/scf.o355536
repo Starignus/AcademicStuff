@@ -1,0 +1,15 @@
+ 
+Imperial College London HPC Service
+-----------------------------------
+Job scf, jobid 355536.cx1b, username ablancar - started execution at 10:16:31 Fri 11/09/15 on system cx1-9-19-3.cx1.hpc.ic.ac.uk
+ 
+/apps/espresso/5.0.2/bin/pw.x
+/apps/espresso/5.0.2/bin/dos.x
+/apps/espresso/5.0.2/bin/projwfc.x
+/apps/espresso/5.0.2/bin/plotband.x
+$PBS_O_WORKDIR= /work/ablancar/QE/Work/PBE_work/H2S_paw_12A_nspin2/PDOS/H2S_paw_12A_nspin2
+ 
+Imperial College London HPC Service
+-----------------------------------
+Job scf, jobid 355536.cx1b, username ablancar - end of execution at 10:17:14 Fri 11/09/15 on system cx1-9-19-3.cx1.hpc.ic.ac.uk
+ 

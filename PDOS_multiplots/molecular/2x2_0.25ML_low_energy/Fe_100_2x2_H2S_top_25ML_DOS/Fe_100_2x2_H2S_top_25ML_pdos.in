@@ -1,0 +1,9 @@
+ &projwfc
+    prefix='Fe_100_2x2_H2S_top_25ML'
+    outdir='./results_Fe_100_2x2_H2S_top_25ML_dos'
+    filpdos='Fe_100_2x2_H2S_top_25ML'
+    DeltaE=0.01
+    ngauss=0
+    degauss=0.01
+    Emin=-50.0, Emax=50.0
+ /

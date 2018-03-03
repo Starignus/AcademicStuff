@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1455561187725.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "A23AF6C1",
+    "lastKnownWriteTime" : 2478507467676319745,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "a2rasrcl6i",
+        "caption" : "oyster",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=oyster&cache_key=a2rasrcl6i",
+        "displayedObservations" : "767",
+        "environment" : "",
+        "object" : "oyster",
+        "totalObservations" : "767",
+        "variables" : "17"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

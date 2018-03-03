@@ -1,0 +1,9 @@
+ &projwfc
+    prefix='Fe_100'
+    outdir='./results_Fe_100_2x2_dos'
+    filpdos='Fe_100_2x2'
+    DeltaE=0.01
+    ngauss=0
+    degauss=0.01
+    Emin=-50.0, Emax=50.0
+ /

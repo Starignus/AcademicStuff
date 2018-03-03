@@ -1,0 +1,58 @@
+Page 27
+a = 7
+b = "Hello World"
+print a
+print b
+print 1000
+print type(a)
+print type(b)
+print a + 3 - 20
+
+Page 28
+l = []
+l.append("three")
+l.append("four")
+print l
+n = [1,'two',3,'four']
+n[1] = 2
+print n[0:2]
+print len(n)
+
+Page 29
+dict = {'one':1,'two':2,'three':'three','four':4.0}
+print dict
+print dict['one']
+dict['three'] = 3
+print type(dict['four'])
+
+page 36
+def func():
+	print "hello world"
+
+def function(a,b):
+	print a * b
+
+def moreThan10(a):
+	if a > 10:
+		return True
+	else:
+		return False
+
+page 37
+def howAreYou():
+	l = ['hi','how','are','you']
+	for word in l:
+		print word
+
+def odd():
+	l = [1,2,3,4,5,6,7,8,9,10]
+	odd = []
+	for num in l:
+		if num%2 == 1:
+			odd.append(num)
+	return odd
+
+page 45
+df = pd.read_csv('titanic.csv')
+df.head(5)
+df.describe()

@@ -1,0 +1,9 @@
+ &projwfc
+    prefix='H2O_paw_12A_nspin2'
+    outdir='./'
+    filpdos='H2O_paw_12A_nspin2.pdos'
+    DeltaE=0.01
+    ngauss=0
+    degauss=0.01
+    Emin=-50.0, Emax=50.0
+ /

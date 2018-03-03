@@ -1,0 +1,9 @@
+ &projwfc
+    prefix='Fe_110_2x2_SB_HS_LB_H'
+    outdir='./results_Fe_110_2x2_SB_HS_LB_H_dos'
+    filpdos='Fe_110_2x2_SB_HS_LB_H'
+    DeltaE=0.01
+    ngauss=0
+    degauss=0.01
+    Emin=-50.0, Emax=50.0
+ /

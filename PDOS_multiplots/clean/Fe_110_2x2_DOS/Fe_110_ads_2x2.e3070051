@@ -1,0 +1,49 @@
+Currently Loaded Modulefiles:
+  1) modules/3.2.10.2
+  2) nodestat/2.2-1.0501.47138.1.78.ari
+  3) sdb/1.0-1.0501.48084.4.48.ari
+  4) alps/5.1.1-2.0501.8471.1.1.ari
+  5) MySQL/5.0.64-1.0000.7096.23.2
+  6) lustre-cray_ari_s/2.4_3.0.80_0.5.1_1.0501.7664.16.1-1.0501.18401.34.1
+  7) udreg/2.3.2-1.0501.7914.1.13.ari
+  8) ugni/5.0-1.0501.8253.10.22.ari
+  9) gni-headers/3.0-1.0501.8317.12.1.ari
+ 10) dmapp/7.0.1-1.0501.8315.8.4.ari
+ 11) xpmem/0.1-2.0501.48424.3.3.ari
+ 12) hss-llm/7.1.0
+ 13) Base-opts/1.0.2-1.0501.47945.4.2.ari
+ 14) craype-network-aries
+ 15) craype/2.2.1
+ 16) cce/8.3.7
+ 17) cray-libsci/13.0.1
+ 18) pmi/5.0.6-1.0000.10439.140.2.ari
+ 19) rca/1.0.0-2.0501.48090.7.46.ari
+ 20) atp/1.7.5
+ 21) PrgEnv-cray/5.1.29
+ 22) pbs/12.2.401.141761
+ 23) craype-ivybridge
+ 24) cray-mpich/7.1.1
+ 25) packages-archer
+ 26) python/2.7.6
+ 27) cse-compute-defaults/1.0
+ 28) budgets/1.1
+ 29) checkScript/1.1
+ 30) checkQueue/1.0
+ 31) checkDisk/1.0
+ 32) bolt/0.6
+ 33) serialJobs/1.0
+ 34) tkdiff/4.2
+ 35) nano/2.2.6
+ 36) imagemagick/6.8.8-2
+ 37) leave_time/1.0.0
+ 38) quickstart/1.0
+ 39) epcc-tools/1.4
+ 40) xmgrace/5.1.23
+ 41) vmd/1.9.1
+ 42) jmol/14.0.13
+ 43) xcrysden/1.5.53
+ 44) espresso/5.0.3-mkl
+
+real	0m0.023s
+user	0m0.004s
+sys	0m0.000s

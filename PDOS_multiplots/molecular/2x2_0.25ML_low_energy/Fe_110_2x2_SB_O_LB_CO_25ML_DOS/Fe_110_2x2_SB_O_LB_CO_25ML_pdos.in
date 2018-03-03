@@ -1,0 +1,9 @@
+ &projwfc
+    prefix='Fe_110_2x2_SB_O_LB_CO_25ML'
+    outdir='./results_Fe_110_2x2_SB_O_LB_CO_25ML_dos'
+    filpdos='Fe_110_2x2_SB_O_LB_CO_25ML'
+    DeltaE=0.01
+    ngauss=0
+    degauss=0.01
+    Emin=-50.0, Emax=50.0
+ /

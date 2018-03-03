@@ -1,0 +1,23 @@
+--------------------------------------------------------------------------------
+*** ablar   Job: 3070051.sdb   started: 07/08/15 04:02:09   host: mom2 ***
+*** ablar   Job: 3070051.sdb   started: 07/08/15 04:02:09   host: mom2 ***
+*** ablar   Job: 3070051.sdb   started: 07/08/15 04:02:09   host: mom2 ***
+*** ablar   Job: 3070051.sdb   started: 07/08/15 04:02:09   host: mom2 ***
+
+--------------------------------------------------------------------------------
+$PBS_O_WORKDIR= /fs3/e05/e05/ablar/QE_WORK/Surfaces/Surface_ads/Fe_110_1x1/5layers/Fe_110_2x2/Fe_110_2x2/Fe_110_2x2_DOS
+/work/y07/y07/cse/espresso/5.0.3-mkl/bin/pw.x
+/work/y07/y07/cse/espresso/5.0.3-mkl/bin/bands.x
+/work/y07/y07/cse/espresso/5.0.3-mkl/bin/dos.x
+/work/y07/y07/cse/espresso/5.0.3-mkl/bin/projwfc.x
+/work/y07/y07/cse/espresso/5.0.3-mkl/bin/plotband.x
+--------------------------------------------------------------------------------
+
+Resources requested: ncpus=48,place=free,walltime=24:00:00
+Resources allocated: cpupercent=0,cput=00:00:00,mem=0kb,ncpus=48,vmem=0kb,walltime=00:00:02
+
+*** ablar   Job: 3070051.sdb   ended: 07/08/15 04:02:11   queue: standard ***
+*** ablar   Job: 3070051.sdb   ended: 07/08/15 04:02:11   queue: standard ***
+*** ablar   Job: 3070051.sdb   ended: 07/08/15 04:02:11   queue: standard ***
+*** ablar   Job: 3070051.sdb   ended: 07/08/15 04:02:11   queue: standard ***
+--------------------------------------------------------------------------------

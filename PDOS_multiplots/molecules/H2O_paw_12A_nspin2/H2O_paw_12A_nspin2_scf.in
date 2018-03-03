@@ -1,0 +1,49 @@
+ &control
+    calculation='scf'
+    restart_mode='from_scratch',
+    pseudo_dir = '/work/ablancar/QE/PSEUDO',
+    outdir='./'
+    prefix='H2O_paw_12A_nspin2'
+    wf_collect = .true.
+    tprnfor = .true.
+    tstress=.true.
+    nstep=100
+    etot_conv_thr=1.0D-5
+    forc_conv_thr=1.0D-4
+    verbosity='high'
+    disk_io='default'
+    max_seconds=86000
+
+
+ /
+ &system
+    ibrav = 1, 
+    celldm(1) =12.0, 
+    nat=  3, 
+    ntyp= 2,
+    nbnd=10, 
+    ecutwfc = 95, ecutrho = 800
+    occupations='smearing', smearing='mv', degauss=0.01,
+    input_DFT='PBE'
+    nspin =2
+    starting_magnetization(1)=1.0
+    starting_magnetization(2)=-1.0
+
+
+ /
+ &electrons
+    mixing_beta = 0.7
+    conv_thr =  1.0d-8
+ /
+ &ions
+ /
+ATOMIC_SPECIES
+ H   1.0 H.pbe-kjpaw_psl.0.1.upf
+ O  16.0 O.pbe-n-kjpaw_psl.0.1.UPF
+ATOMIC_POSITIONS (angstrom)
+O        0.000000000  -0.198310208   0.000000000
+H        0.000000000   0.399155104   0.763916382
+H       -0.000000000   0.399155104  -0.763916382
+K_POINTS (automatic)
+1 1 1 0 0 0
+

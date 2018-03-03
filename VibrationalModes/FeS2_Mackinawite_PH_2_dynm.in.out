@@ -1,0 +1,73 @@
+Defaulting to ethernet
+No MPI process pinning
+Starting MPD ring...
+PBS has allocated the following nodes:
+cx1-11-2-2
+cx1-11-2-2
+cx1-11-2-2
+cx1-11-2-2
+cx1-11-2-2
+cx1-11-2-2
+cx1-11-2-2
+cx1-11-2-2
+cx1-11-2-2
+cx1-11-2-2
+cx1-11-2-2
+cx1-11-2-2
+cx1-11-2-2
+cx1-11-2-2
+cx1-11-2-2
+cx1-11-2-2
+---
+mpiexec.intel -genv I_MPI_DEVICE ssm -genv I_MPI_DEBUG 0 -genv I_MPI_PIN yes -genv I_MPI_PIN_MODE lib -genv I_MPI_FALLBACK_DEVICE disable -genv DAPL_MAX_CM_RETRIES 500 -genv DAPL_MAX_CM_RESPONSE_TIME 300 -genv I_MPI_DAPL_CONNECTION_TIMEOUT 300 -machinefile /tmp/pbs.98827.cx1b/tmp.rPpwX7r6YJ -n 16 -wdir /work/ablancar/QE/Work/PBE_work/FeS2_Mackinawite_docellfree/FeS2_Mackinawite_PH/FeS2_Mackinawite_PH_2 dynmat.x
+
+Job output begins below
+-----------------------
+
+     Program DYNMAT v.5.0.2 (svn rev. 9392) starts on 29Jul2015 at  9:29:45 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote.php
+
+     Parallel version (MPI), running on    16 processors
+     R & G space division:  proc/nbgrp/npool/nimage =      16
+
+     Reading Dynamical Matrix from file dyn.G
+     ...Force constants read
+     ...epsilon and Z* not read (not found on file)
+     A direction for q was not specified:TO-LO splitting will be absent
+
+     Polarizability (A^3 units)
+     multiply by 1.000000 for Clausius-Mossotti correction
+         0.000000    0.000000    0.000000
+         0.000000    0.000000    0.000000
+         0.000000    0.000000    0.000000
+
+     IR activities are in (D/A)^2/amu units
+
+# mode   [cm-1]    [THz]      IR
+    1     -0.00   -0.0000    0.0000
+    2      0.00    0.0000    0.0000
+    3      0.00    0.0000    0.0000
+    4    232.15    6.9596    0.0000
+    5    250.69    7.5156    0.0000
+    6    250.69    7.5156    0.0000
+    7    380.18   11.3976    0.0000
+    8    384.11   11.5152    0.0000
+    9    384.11   11.5152    0.0000
+   10    404.78   12.1350    0.0000
+   11    406.56   12.1882    0.0000
+   12    406.56   12.1882    0.0000
+ 
+     DYNMAT       :     0.00s CPU         0.27s WALL
+
+ 
+   This run was terminated on:   9:29:45  29Jul2015            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

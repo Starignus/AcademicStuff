@@ -1,0 +1,9 @@
+ &projwfc
+    prefix='Fe_100_2x2_CO_hollow_O_SB'
+    outdir='./results_Fe_100_2x2_CO_hollow_O_SB_dos'
+    filpdos='Fe_100_2x2_CO_hollow_O_SB'
+    DeltaE=0.01
+    ngauss=0
+    degauss=0.01
+    Emin=-50.0, Emax=50.0
+ /

@@ -1,0 +1,2750 @@
+
+     Program PHONON v.4.3.2     starts on 14Oct2013 at 20:35:41 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/wiki/index.php/Citing_Quantum-ESPRESSO
+
+     Parallel version (MPI), running on   128 processors
+     R & G space division:  proc/pool =  128
+
+     Ultrasoft (Vanderbilt) Pseudopotentials
+
+   Info: using nr1, nr2, nr3 values from input
+
+   Info: using nr1s, nr2s, nr3s values from input
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         112     112     29                 3989     3989     543
+     Max         114     114     30                 3991     3991     548
+     Sum       14407   14407   3817               510755   510755   69867
+ 
+
+     Check: negative/imaginary core charge=   -0.000002    0.000000
+
+     negative rho (up, down):  0.394E-01 0.000E+00
+        1 /   1 q-points for this run, from  1 to  1:
+       N       xq(1)         xq(2)         xq(3) 
+       1   0.000000000   0.000000000   0.000000000
+ 
+
+     Calculation of q =    0.0000000   0.0000000   0.0000000
+
+     Restart in Phonon calculation
+
+                                                                                
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =      32.3257  a.u.
+     unit-cell volume          =   10695.9040 (a.u.)^3
+     number of atoms/cell      =           99
+     number of atomic types    =            3
+     kinetic-energy cut-off    =      50.0000  Ry
+     charge density cut-off    =     200.0000  Ry
+     convergence threshold     =      1.0E-14
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation      = PBESOL ( 1 410 8 0)
+     EXX-fraction              =        0.00
+
+
+     celldm(1)=   32.32571  celldm(2)=    0.00000  celldm(3)=    0.36563
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000  0.3656 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774  0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000  0.0000  2.7350 )  
+
+
+     Atoms inside the unit cell: 
+
+   Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1        Th 232.0381   tau( 1) = (    0.50000    0.28868    0.18502  )
+        2        Th 232.0381   tau( 2) = (    0.00000    0.00000    0.00000  )
+        3        Th 232.0381   tau( 3) = (    0.17008    0.28881    0.27474  )
+        4        Th 232.0381   tau( 4) = (    0.00000    0.57735    0.18061  )
+        5        Th 232.0381   tau( 5) = (    0.16485    0.86892    0.27474  )
+        6        Th 232.0381   tau( 6) = (   -0.33492    0.57433    0.27474  )
+        7        Th 232.0381   tau( 7) = (    0.32992    0.57722    0.09089  )
+        8        Th 232.0381   tau( 8) = (    0.33515   -0.00289    0.09089  )
+        9        Th 232.0381   tau( 9) = (    0.83493    0.29170    0.09089  )
+       10        Mo  95.9600   tau(10) = (    0.05225    0.37585    0.08415  )
+       11        Mo  95.9600   tau(11) = (    0.54649    0.08839    0.09338  )
+       12        Mo  95.9600   tau(12) = (    0.15201    0.14512    0.09645  )
+       13        Mo  95.9600   tau(13) = (    0.14839    0.72336    0.08415  )
+       14        Mo  95.9600   tau(14) = (   -0.20063    0.63286    0.08415  )
+       15        Mo  95.9600   tau(15) = (    0.44775    0.49018    0.28149  )
+       16        Mo  95.9600   tau(16) = (    0.35162    0.14267    0.28149  )
+       17        Mo  95.9600   tau(17) = (    0.70064    0.23317    0.28148  )
+       18        Mo  95.9600   tau(18) = (    0.65021    0.42908    0.09338  )
+       19        Mo  95.9600   tau(19) = (    0.30330    0.34856    0.09338  )
+       20        Mo  95.9600   tau(20) = (   -0.04649    0.77764    0.27225  )
+       21        Mo  95.9600   tau(21) = (   -0.15021    0.43695    0.27225  )
+       22        Mo  95.9600   tau(22) = (    0.19670    0.51747    0.27225  )
+       23        Mo  95.9600   tau(23) = (    0.79833    0.05909    0.09645  )
+       24        Mo  95.9600   tau(24) = (    0.54967    0.66183    0.09645  )
+       25        Mo  95.9600   tau(25) = (    0.34800    0.72091    0.26919  )
+       26        Mo  95.9600   tau(26) = (   -0.29832    0.80694    0.26919  )
+       27        Mo  95.9600   tau(27) = (   -0.04967    0.20420    0.26919  )
+       28        O   15.9994   tau(28) = (   -0.09373    0.20443    0.17627  )
+       29        O   15.9994   tau(29) = (    0.38355    0.09474    0.36723  )
+       30        O   15.9994   tau(30) = (    0.74309    0.00705    0.02647  )
+       31        O   15.9994   tau(31) = (    0.59379    0.08178    0.00242  )
+       32        O   15.9994   tau(32) = (    0.47703    0.01386    0.10348  )
+       33        O   15.9994   tau(33) = (    0.89965    0.04233    0.07667  )
+       34        O   15.9994   tau(34) = (    0.11301    0.35349    0.16386  )
+       35        O   15.9994   tau(35) = (    0.61844    0.08154    0.16720  )
+       36        O   15.9994   tau(36) = (    0.01185    0.47065    0.10146  )
+       37        O   15.9994   tau(37) = (   -0.02334    0.30712    0.07725  )
+       38        O   15.9994   tau(38) = (    0.24877    0.11220    0.09093  )
+       39        O   15.9994   tau(39) = (    0.50170    0.18228    0.10473  )
+       40        O   15.9994   tau(40) = (    0.36982    0.68264    0.17627  )
+       41        O   15.9994   tau(41) = (   -0.27609    0.84498    0.17627  )
+       42        O   15.9994   tau(42) = (    0.59373    0.66160    0.18936  )
+       43        O   15.9994   tau(43) = (    0.13018    0.18339    0.18936  )
+       44        O   15.9994   tau(44) = (    0.77609    0.02105    0.18936  )
+       45        O   15.9994   tau(45) = (    0.72618    0.28480    0.36722  )
+       46        O   15.9994   tau(46) = (    0.39027    0.48649    0.36722  )
+       47        O   15.9994   tau(47) = (    0.11645    0.77129   -0.00159  )
+       48        O   15.9994   tau(48) = (   -0.22618    0.58123   -0.00159  )
+       49        O   15.9994   tau(49) = (    0.10974    0.37954   -0.00159  )
+       50        O   15.9994   tau(50) = (    0.62235    0.64001    0.02647  )
+       51        O   15.9994   tau(51) = (    0.13456    0.21897    0.02647  )
+       52        O   15.9994   tau(52) = (   -0.24309    0.85898    0.33917  )
+       53        O   15.9994   tau(53) = (   -0.12235    0.22602    0.33917  )
+       54        O   15.9994   tau(54) = (    0.36544    0.64706    0.33917  )
+       55        O   15.9994   tau(55) = (    0.63229    0.47335    0.00242  )
+       56        O   15.9994   tau(56) = (    0.27393    0.31091    0.00242  )
+       57        O   15.9994   tau(57) = (   -0.09379    0.78425    0.36321  )
+       58        O   15.9994   tau(58) = (   -0.13229    0.39268    0.36321  )
+       59        O   15.9994   tau(59) = (    0.22608    0.55512    0.36321  )
+       60        O   15.9994   tau(60) = (    0.74949    0.40620    0.10348  )
+       61        O   15.9994   tau(61) = (    0.27348    0.44598    0.10348  )
+       62        O   15.9994   tau(62) = (    0.02297    0.85217    0.26215  )
+       63        O   15.9994   tau(63) = (   -0.24949    0.45983    0.26215  )
+       64        O   15.9994   tau(64) = (    0.22652    0.42005    0.26215  )
+       65        O   15.9994   tau(65) = (    0.51351    0.75796    0.07667  )
+       66        O   15.9994   tau(66) = (    0.08684    0.06574    0.07667  )
+       67        O   15.9994   tau(67) = (   -0.39965    0.82369    0.28896  )
+       68        O   15.9994   tau(68) = (   -0.01351    0.10807    0.28896  )
+       69        O   15.9994   tau(69) = (    0.41317    0.80029    0.28896  )
+       70        O   15.9994   tau(70) = (    0.13737    0.78715    0.16386  )
+       71        O   15.9994   tau(71) = (   -0.25038    0.59142    0.16386  )
+       72        O   15.9994   tau(72) = (    0.38700    0.51254    0.20177  )
+       73        O   15.9994   tau(73) = (    0.36263    0.07888    0.20177  )
+       74        O   15.9994   tau(74) = (    0.75038    0.27461    0.20177  )
+       75        O   15.9994   tau(75) = (    0.62016    0.49482    0.16720  )
+       76        O   15.9994   tau(76) = (    0.26140    0.28967    0.16720  )
+       77        O   15.9994   tau(77) = (   -0.11844    0.78448    0.19843  )
+       78        O   15.9994   tau(78) = (   -0.12016    0.37121    0.19844  )
+       79        O   15.9994   tau(79) = (    0.23860    0.57636    0.19843  )
+       80        O   15.9994   tau(80) = (    0.08649    0.64097    0.10146  )
+       81        O   15.9994   tau(81) = (   -0.09833    0.62044    0.10146  )
+       82        O   15.9994   tau(82) = (    0.48815    0.39538    0.26417  )
+       83        O   15.9994   tau(83) = (    0.41352    0.22506    0.26417  )
+       84        O   15.9994   tau(84) = (    0.59834    0.24559    0.26417  )
+       85        O   15.9994   tau(85) = (    0.24571    0.69225    0.07725  )
+       86        O   15.9994   tau(86) = (   -0.22236    0.73269    0.07725  )
+       87        O   15.9994   tau(87) = (    0.52335    0.55891    0.28838  )
+       88        O   15.9994   tau(88) = (    0.25430    0.17378    0.28838  )
+       89        O   15.9994   tau(89) = (    0.72236    0.13334    0.28838  )
+       90        O   15.9994   tau(90) = (    0.77845    0.15934    0.09093  )
+       91        O   15.9994   tau(91) = (    0.47278    0.59449    0.09093  )
+       92        O   15.9994   tau(92) = (    0.25123    0.75383    0.27470  )
+       93        O   15.9994   tau(93) = (   -0.27845    0.70669    0.27470  )
+       94        O   15.9994   tau(94) = (    0.02722    0.27154    0.27470  )
+       95        O   15.9994   tau(95) = (    0.59130    0.34335    0.10474  )
+       96        O   15.9994   tau(96) = (    0.40701    0.34041    0.10474  )
+       97        O   15.9994   tau(97) = (   -0.00170    0.68375    0.26090  )
+       98        O   15.9994   tau(98) = (   -0.09129    0.52268    0.26090  )
+       99        O   15.9994   tau(99) = (    0.09299    0.52562    0.26090  )
+
+     Computing dynamical matrix for 
+                    q = (   0.0000000   0.0000000   0.0000000 )
+ 
+      7 Sym.Ops. (with q -> -q+G )
+
+
+     G cutoff = 5293.7877  (   3990 G-vectors)     FFT grid: (150,150, 54)
+     number of k points=     4
+
+     PseudoPot. # 1 for Th read from file:
+     /hpcwork/jara0038/ariadna/ThMo2O8/PHON/U_0/HEX/ThMo4O8_vx-relax.save/Th.uspp.pbe.UPF
+     MD5 check sum: c61255c1cd298da3ee729aeea206c4ba
+     Pseudo is Ultrasoft + core correction, Zval = 12.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  783 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   3
+                l(6) =   3
+     Q(r) pseudized with  8 coefficients,  rinner =    1.400   1.400   1.400
+                                                       1.400   1.400   1.400
+                                                       1.400
+
+     PseudoPot. # 2 for Mo read from file:
+     /hpcwork/jara0038/ariadna/ThMo2O8/PHON/U_0/HEX/ThMo4O8_vx-relax.save/Mo.uspp.pbe.UPF
+     MD5 check sum: ebbb4cc6f20032dd16a6e5518f6ad3a2
+     Pseudo is Ultrasoft + core correction, Zval = 14.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  889 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with  6 coefficients,  rinner =    1.000   1.000   1.000
+                                                       1.000   1.000
+
+     PseudoPot. # 3 for ox read from file:
+     /hpcwork/jara0038/ariadna/ThMo2O8/PHON/U_0/HEX/ThMo4O8_vx-relax.save/O.uspp.pbe.UPF
+     MD5 check sum: bc035ce127357c107da78e4640aecd7f
+     Pseudo is Ultrasoft, Zval =  6.0
+     Generated by new atomic code, or converted to UPF format
+     Using radial grid of  737 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with  8 coefficients,  rinner =    0.700   0.700   0.700
+
+
+
+     Electric field:
+     Dielectric constant
+     Born effective charges in two ways 
+
+
+     Atomic displacements:
+     There are 197 irreducible representations
+
+     Representation     1      1 modes -A_g  Done
+
+     Representation     2      1 modes -A_g  Done
+
+     Representation     3      1 modes -A_g  Done
+
+     Representation     4      1 modes -A_g  Done
+
+     Representation     5      1 modes -A_g  Done
+
+     Representation     6      1 modes -A_g  Done
+
+     Representation     7      1 modes -A_g  Done
+
+     Representation     8      1 modes -A_g  Done
+
+     Representation     9      1 modes -A_g  Done
+
+     Representation    10      1 modes -A_g  Done
+
+     Representation    11      1 modes -A_g  Done
+
+     Representation    12      1 modes -A_g  Done
+
+     Representation    13      1 modes -A_g  Done
+
+     Representation    14      1 modes -A_g  Done
+
+     Representation    15      1 modes -A_g  Done
+
+     Representation    16      1 modes -A_g  Done
+
+     Representation    17      1 modes -A_g  Done
+
+     Representation    18      1 modes -A_g  Done
+
+     Representation    19      1 modes -A_g  Done
+
+     Representation    20      1 modes -A_g  Done
+
+     Representation    21      1 modes -A_g  Done
+
+     Representation    22      1 modes -A_g  Done
+
+     Representation    23      1 modes -A_g  Done
+
+     Representation    24      1 modes -A_g  Done
+
+     Representation    25      1 modes -A_g  Done
+
+     Representation    26      1 modes -A_g  Done
+
+     Representation    27      1 modes -A_g  Done
+
+     Representation    28      1 modes -A_g  Done
+
+     Representation    29      1 modes -A_g  Done
+
+     Representation    30      1 modes -A_g  Done
+
+     Representation    31      1 modes -A_g  Done
+
+     Representation    32      1 modes -A_g  Done
+
+     Representation    33      1 modes -A_g  Done
+
+     Representation    34      1 modes -A_g  Done
+
+     Representation    35      1 modes -A_g  Done
+
+     Representation    36      1 modes -A_g  Done
+
+     Representation    37      1 modes -A_g  Done
+
+     Representation    38      1 modes -A_g  Done
+
+     Representation    39      1 modes -A_g  Done
+
+     Representation    40      1 modes -A_g  Done
+
+     Representation    41      1 modes -A_g  Done
+
+     Representation    42      1 modes -A_g  Done
+
+     Representation    43      1 modes -A_g  Done
+
+     Representation    44      1 modes -A_g  Done
+
+     Representation    45      1 modes -A_g  Done
+
+     Representation    46      1 modes -A_g  Done
+
+     Representation    47      1 modes -A_g  Done
+
+     Representation    48      1 modes -A_g  Done
+
+     Representation    49      1 modes -A_g  Done
+
+     Representation    50      2 modes -E_g  Done
+
+     Representation    51      2 modes -E_g  Done
+
+     Representation    52      2 modes -E_g  Done
+
+     Representation    53      2 modes -E_g  Done
+
+     Representation    54      2 modes -E_g  Done
+
+     Representation    55      2 modes -E_g  Done
+
+     Representation    56      2 modes -E_g  Done
+
+     Representation    57      2 modes -E_g  Done
+
+     Representation    58      2 modes -E_g  Done
+
+     Representation    59      2 modes -E_g  Done
+
+     Representation    60      2 modes -E_g  Done
+
+     Representation    61      2 modes -E_g  Done
+
+     Representation    62      2 modes -E_g  Done
+
+     Representation    63      2 modes -E_g  Done
+
+     Representation    64      2 modes -E_g  Done
+
+     Representation    65      2 modes -E_g  Done
+
+     Representation    66      2 modes -E_g  Done
+
+     Representation    67      2 modes -E_g  Done
+
+     Representation    68      2 modes -E_g  Done
+
+     Representation    69      2 modes -E_g  Done
+
+     Representation    70      2 modes -E_g  Done
+
+     Representation    71      2 modes -E_g  Done
+
+     Representation    72      2 modes -E_g  Done
+
+     Representation    73      2 modes -E_g  Done
+
+     Representation    74      2 modes -E_g  Done
+
+     Representation    75      2 modes -E_g*  Done
+
+     Representation    76      2 modes -E_g*  Done
+
+     Representation    77      2 modes -E_g*  Done
+
+     Representation    78      2 modes -E_g*  Done
+
+     Representation    79      2 modes -E_g*  Done
+
+     Representation    80      2 modes -E_g*  Done
+
+     Representation    81      2 modes -E_g*  Done
+
+     Representation    82      2 modes -E_g*  Done
+
+     Representation    83      2 modes -E_g*  Done
+
+     Representation    84      2 modes -E_g*  Done
+
+     Representation    85      2 modes -E_g*  Done
+
+     Representation    86      2 modes -E_g*  Done
+
+     Representation    87      2 modes -E_g*  Done
+
+     Representation    88      2 modes -E_g*  Done
+
+     Representation    89      2 modes -E_g*  Done
+
+     Representation    90      2 modes -E_g*  Done
+
+     Representation    91      2 modes -E_g*  Done
+
+     Representation    92      2 modes -E_g*  Done
+
+     Representation    93      2 modes -E_g*  Done
+
+     Representation    94      2 modes -E_g*  Done
+
+     Representation    95      2 modes -E_g*  Done
+
+     Representation    96      2 modes -E_g*  Done
+
+     Representation    97      4 modes -E_g*  Done
+
+     Representation    98      1 modes -A_u  Done
+
+     Representation    99      1 modes -A_u  Done
+
+     Representation   100      1 modes -A_u  Done
+
+     Representation   101      1 modes -A_u  Done
+
+     Representation   102      1 modes -A_u  Done
+
+     Representation   103      1 modes -A_u  Done
+
+     Representation   104      1 modes -A_u  Done
+
+     Representation   105      1 modes -A_u  Done
+
+     Representation   106      1 modes -A_u  Done
+
+     Representation   107      1 modes -A_u  Done
+
+     Representation   108      1 modes -A_u  Done
+
+     Representation   109      1 modes -A_u  Done
+
+     Representation   110      1 modes -A_u  Done
+
+     Representation   111      1 modes -A_u  Done
+
+     Representation   112      1 modes -A_u  Done
+
+     Representation   113      1 modes -A_u  Done
+
+     Representation   114      1 modes -A_u  Done
+
+     Representation   115      1 modes -A_u  Done
+
+     Representation   116      1 modes -A_u  Done
+
+     Representation   117      1 modes -A_u  Done
+
+     Representation   118      1 modes -A_u  Done
+
+     Representation   119      1 modes -A_u  Done
+
+     Representation   120      1 modes -A_u  Done
+
+     Representation   121      1 modes -A_u  Done
+
+     Representation   122      1 modes -A_u  Done
+
+     Representation   123      1 modes -A_u  Done
+
+     Representation   124      1 modes -A_u  Done
+
+     Representation   125      1 modes -A_u  Done
+
+     Representation   126      1 modes -A_u  Done
+
+     Representation   127      1 modes -A_u  Done
+
+     Representation   128      1 modes -A_u  Done
+
+     Representation   129      1 modes -A_u  Done
+
+     Representation   130      1 modes -A_u  Done
+
+     Representation   131      1 modes -A_u  Done
+
+     Representation   132      1 modes -A_u  Done
+
+     Representation   133      1 modes -A_u  Done
+
+     Representation   134      1 modes -A_u  Done
+
+     Representation   135      1 modes -A_u  Done
+
+     Representation   136      1 modes -A_u  Done
+
+     Representation   137      1 modes -A_u  Done
+
+     Representation   138      1 modes -A_u  Done
+
+     Representation   139      1 modes -A_u  Done
+
+     Representation   140      1 modes -A_u  Done
+
+     Representation   141      1 modes -A_u  Done
+
+     Representation   142      1 modes -A_u  Done
+
+     Representation   143      1 modes -A_u  Done
+
+     Representation   144      1 modes -A_u  Done
+
+     Representation   145      1 modes -A_u  Done
+
+     Representation   146      1 modes -A_u  Done
+
+     Representation   147      1 modes -A_u  Done
+
+     Representation   148      2 modes -E_u  Done
+
+     Representation   149      2 modes -E_u  Done
+
+     Representation   150      2 modes -E_u  Done
+
+     Representation   151      2 modes -E_u  Done
+
+     Representation   152      2 modes -E_u  Done
+
+     Representation   153      2 modes -E_u  Done
+
+     Representation   154      2 modes -E_u  Done
+
+     Representation   155      2 modes -E_u  Done
+
+     Representation   156      2 modes -E_u  Done
+
+     Representation   157      2 modes -E_u  Done
+
+     Representation   158      2 modes -E_u  Done
+
+     Representation   159      2 modes -E_u  Done
+
+     Representation   160      2 modes -E_u  Done
+
+     Representation   161      2 modes -E_u  Done
+
+     Representation   162      2 modes -E_u  Done
+
+     Representation   163      2 modes -E_u  Done
+
+     Representation   164      2 modes -E_u  Done
+
+     Representation   165      2 modes -E_u  Done
+
+     Representation   166      2 modes -E_u  Done
+
+     Representation   167      2 modes -E_u  Done
+
+     Representation   168      2 modes -E_u  Done
+
+     Representation   169      2 modes -E_u  Done
+
+     Representation   170      2 modes -E_u  Done
+
+     Representation   171      2 modes -E_u  Done
+
+     Representation   172      2 modes -E_u  Done
+
+     Representation   173      2 modes -E_u  Done
+
+     Representation   174      2 modes -E_u  Done
+
+     Representation   175      2 modes -E_u  Done
+
+     Representation   176      2 modes -E_u  Done
+
+     Representation   177      2 modes -E_u  Done
+
+     Representation   178      2 modes -E_u  Done
+
+     Representation   179      2 modes -E_u  Done
+
+     Representation   180      2 modes -E_u  Done
+
+     Representation   181      2 modes -E_u  Done
+
+     Representation   182      2 modes -E_u  Done
+
+     Representation   183      2 modes -E_u  Done
+
+     Representation   184      2 modes -E_u  Done
+
+     Representation   185      2 modes -E_u  Done
+
+     Representation   186      2 modes -E_u  Done
+
+     Representation   187      2 modes -E_u  Done
+
+     Representation   188      2 modes -E_u  Done
+
+     Representation   189      2 modes -E_u  Done
+
+     Representation   190      2 modes -E_u  Done
+
+     Representation   191      2 modes -E_u  Done
+
+     Representation   192      2 modes -E_u To be done
+
+     Representation   193      2 modes -E_u To be done
+
+     Representation   194      2 modes -E_g* To be done
+
+     Representation   195      2 modes -E_u To be done
+
+     Representation   196      2 modes -E_u To be done
+
+     Representation   197      2 modes -E_u To be done
+
+
+     PHONON       :  8m11.01s CPU     9m14.19s WALL
+
+
+          Dielectric constant in cartesian axis 
+
+          (       3.944515191       0.000000002       0.000000000 )
+          (      -0.000000002       3.944515191       0.000000000 )
+          (       0.000000000       0.000000000       3.899689105 )
+
+          Effective charges (d Force / dE) in cartesian axis
+
+           atom      1   Th 
+      Ex  (        7.09443       -0.68925        0.00000 )
+      Ey  (        0.68925        7.09443        0.00000 )
+      Ez  (        0.00000        0.00000        5.25684 )
+           atom      2   Th 
+      Ex  (        7.54624       -0.59588        0.00000 )
+      Ey  (        0.59588        7.54624        0.00000 )
+      Ez  (        0.00000        0.00000        5.23706 )
+           atom      3   Th 
+      Ex  (        6.71262       -1.24938        0.19265 )
+      Ey  (        1.23580        6.64218       -0.67960 )
+      Ez  (        0.14250        0.87094        8.33393 )
+           atom      4   Th 
+      Ex  (        7.09443       -0.68925        0.00000 )
+      Ey  (        0.68925        7.09443        0.00000 )
+      Ez  (        0.00000        0.00000        5.25684 )
+           atom      5   Th 
+      Ex  (        6.65391       -1.26970        0.49222 )
+      Ey  (        1.21548        6.70089        0.50664 )
+      Ez  (       -0.82551       -0.31206        8.33393 )
+           atom      6   Th 
+      Ex  (        6.66567       -1.20869       -0.68487 )
+      Ey  (        1.27649        6.68913        0.17296 )
+      Ez  (        0.68301       -0.55888        8.33393 )
+           atom      7   Th 
+      Ex  (        6.71262       -1.24938        0.19265 )
+      Ey  (        1.23580        6.64218       -0.67960 )
+      Ez  (        0.14250        0.87094        8.33393 )
+           atom      8   Th 
+      Ex  (        6.65391       -1.26970        0.49222 )
+      Ey  (        1.21548        6.70089        0.50664 )
+      Ez  (       -0.82551       -0.31206        8.33393 )
+           atom      9   Th 
+      Ex  (        6.66567       -1.20869       -0.68487 )
+      Ey  (        1.27649        6.68913        0.17296 )
+      Ez  (        0.68301       -0.55888        8.33393 )
+           atom     10   Mo 
+      Ex  (        4.42304        0.16430       -0.06194 )
+      Ey  (       -0.81944        4.19106        0.35969 )
+      Ez  (       -0.18368        0.31952        4.00727 )
+           atom     11   Mo 
+      Ex  (        4.42057        0.26641       -0.06822 )
+      Ey  (       -0.81846        4.05285        0.01037 )
+      Ez  (        0.15540        0.45453        3.99203 )
+           atom     12   Mo 
+      Ex  (        3.94399        0.44434        0.13023 )
+      Ey  (       -0.35399        4.61618        0.28017 )
+      Ez  (        0.27127        0.05481        3.93622 )
+           atom     13   Mo 
+      Ex  (        3.96537        0.55520       -0.28053 )
+      Ey  (       -0.42854        4.64873       -0.23349 )
+      Ez  (       -0.18487       -0.31883        4.00727 )
+           atom     14   Mo 
+      Ex  (        4.53274        0.75610        0.34247 )
+      Ey  (       -0.22763        4.08136       -0.12620 )
+      Ez  (        0.36855       -0.00068        4.00727 )
+           atom     15   Mo 
+      Ex  (        4.42304        0.16430       -0.06194 )
+      Ey  (       -0.81944        4.19106        0.35969 )
+      Ez  (       -0.18368        0.31952        4.00727 )
+           atom     16   Mo 
+      Ex  (        3.96537        0.55520       -0.28053 )
+      Ey  (       -0.42854        4.64873       -0.23349 )
+      Ez  (       -0.18487       -0.31883        4.00727 )
+           atom     17   Mo 
+      Ex  (        4.53274        0.75610        0.34247 )
+      Ey  (       -0.22763        4.08136       -0.12620 )
+      Ez  (        0.36855       -0.00068        4.00727 )
+           atom     18   Mo 
+      Ex  (        3.90574        0.52122        0.02513 )
+      Ey  (       -0.56365        4.56768       -0.06427 )
+      Ez  (       -0.47133       -0.09268        3.99203 )
+           atom     19   Mo 
+      Ex  (        4.38382        0.83967        0.04310 )
+      Ey  (       -0.24520        4.08960        0.05390 )
+      Ez  (        0.31593       -0.36185        3.99203 )
+           atom     20   Mo 
+      Ex  (        4.42057        0.26641       -0.06822 )
+      Ey  (       -0.81846        4.05285        0.01037 )
+      Ez  (        0.15540        0.45453        3.99203 )
+           atom     21   Mo 
+      Ex  (        3.90574        0.52122        0.02513 )
+      Ey  (       -0.56365        4.56768       -0.06427 )
+      Ez  (       -0.47133       -0.09268        3.99203 )
+           atom     22   Mo 
+      Ex  (        4.38382        0.83967        0.04310 )
+      Ey  (       -0.24520        4.08960        0.05390 )
+      Ez  (        0.31593       -0.36185        3.99203 )
+           atom     23   Mo 
+      Ex  (        4.48726        0.66764       -0.30775 )
+      Ey  (       -0.13069        4.07291       -0.02731 )
+      Ez  (       -0.18310        0.20752        3.93622 )
+           atom     24   Mo 
+      Ex  (        4.40901        0.08551        0.17752 )
+      Ey  (       -0.71282        4.15116       -0.25286 )
+      Ez  (       -0.08817       -0.26233        3.93622 )
+           atom     25   Mo 
+      Ex  (        3.94399        0.44434        0.13023 )
+      Ey  (       -0.35399        4.61618        0.28017 )
+      Ez  (        0.27127        0.05481        3.93622 )
+           atom     26   Mo 
+      Ex  (        4.48726        0.66764       -0.30775 )
+      Ey  (       -0.13069        4.07291       -0.02731 )
+      Ez  (       -0.18310        0.20752        3.93622 )
+           atom     27   Mo 
+      Ex  (        4.40901        0.08551        0.17752 )
+      Ey  (       -0.71282        4.15116       -0.25286 )
+      Ez  (       -0.08817       -0.26233        3.93622 )
+           atom     28   O  
+      Ex  (       -1.51713        0.40172       -1.37351 )
+      Ey  (        0.30609       -1.06170        0.62062 )
+      Ez  (       -1.44314        0.56194       -3.10099 )
+           atom     29   O  
+      Ex  (       -1.01190        0.10573       -0.29218 )
+      Ey  (        0.07213       -1.85547        1.58523 )
+      Ez  (       -0.37245        1.63133       -3.00833 )
+           atom     30   O  
+      Ex  (       -1.79264       -0.68346       -1.51319 )
+      Ey  (       -0.78892       -1.33174       -0.90015 )
+      Ez  (       -1.23931       -0.73639       -2.52669 )
+           atom     31   O  
+      Ex  (       -1.59154        0.47338        1.43632 )
+      Ey  (        0.34383       -0.97966       -0.73523 )
+      Ez  (        1.47014       -0.65732       -3.14938 )
+           atom     32   O  
+      Ex  (       -3.02529       -1.30732        0.07165 )
+      Ey  (       -1.18707       -1.55844        0.14999 )
+      Ez  (       -0.12180        0.03506       -0.79199 )
+           atom     33   O  
+      Ex  (       -4.36807        0.96798        1.57343 )
+      Ey  (        0.88705       -0.91354       -0.45438 )
+      Ez  (        1.30787       -0.42381       -1.25381 )
+           atom     34   O  
+      Ex  (       -1.77358        0.62237       -1.56160 )
+      Ey  (        0.49814       -1.04213        0.89651 )
+      Ez  (       -1.35563        0.75372       -2.76194 )
+           atom     35   O  
+      Ex  (       -2.01641        0.44025       -1.57563 )
+      Ey  (        0.42930       -1.05462        0.74164 )
+      Ez  (       -1.34273        0.56318       -2.54120 )
+           atom     36   O  
+      Ex  (       -1.02012        1.09190        0.41422 )
+      Ey  (        1.07437       -4.18927       -1.56610 )
+      Ez  (        0.32205       -1.28896       -1.24431 )
+           atom     37   O  
+      Ex  (       -3.27239       -1.29049       -0.00928 )
+      Ey  (       -1.18868       -1.44394       -0.09044 )
+      Ez  (       -0.22227       -0.10841       -0.76796 )
+           atom     38   O  
+      Ex  (       -2.91813        1.37953        0.12337 )
+      Ey  (        1.46263       -1.73340       -0.07841 )
+      Ez  (       -0.00556        0.10695       -0.74955 )
+           atom     39   O  
+      Ex  (       -1.03836        1.05821        0.30095 )
+      Ey  (        1.00359       -4.16127       -1.40720 )
+      Ez  (        0.20579       -1.23145       -1.21366 )
+           atom     40   O  
+      Ex  (       -0.86907        0.06807        0.14928 )
+      Ey  (       -0.02756       -1.70977       -1.49980 )
+      Ez  (        0.23492       -1.53077       -3.10099 )
+           atom     41   O  
+      Ex  (       -1.48205       -0.32635        1.22423 )
+      Ey  (       -0.42197       -1.09679        0.87918 )
+      Ez  (        1.20822        0.96883       -3.10099 )
+           atom     42   O  
+      Ex  (       -1.51713        0.40172       -1.37351 )
+      Ey  (        0.30609       -1.06170        0.62062 )
+      Ez  (       -1.44314        0.56194       -3.10099 )
+           atom     43   O  
+      Ex  (       -0.86907        0.06807        0.14928 )
+      Ey  (       -0.02756       -1.70977       -1.49980 )
+      Ez  (        0.23492       -1.53077       -3.10099 )
+           atom     44   O  
+      Ex  (       -1.48205       -0.32635        1.22423 )
+      Ey  (       -0.42197       -1.09679        0.87918 )
+      Ez  (        1.20822        0.96883       -3.10099 )
+           atom     45   O  
+      Ex  (       -1.56756       -0.39294       -1.22676 )
+      Ey  (       -0.42654       -1.29981       -1.04565 )
+      Ez  (       -1.22655       -1.13821       -3.00833 )
+           atom     46   O  
+      Ex  (       -1.72159        0.33761        1.51894 )
+      Ey  (        0.30401       -1.14577       -0.53958 )
+      Ez  (        1.59900       -0.49312       -3.00833 )
+           atom     47   O  
+      Ex  (       -1.01190        0.10573       -0.29218 )
+      Ey  (        0.07213       -1.85547        1.58523 )
+      Ez  (       -0.37245        1.63133       -3.00833 )
+           atom     48   O  
+      Ex  (       -1.56756       -0.39294       -1.22676 )
+      Ey  (       -0.42654       -1.29981       -1.04565 )
+      Ez  (       -1.22655       -1.13821       -3.00833 )
+           atom     49   O  
+      Ex  (       -1.72159        0.33761        1.51894 )
+      Ey  (        0.30401       -1.14577       -0.53958 )
+      Ez  (        1.59900       -0.49312       -3.00833 )
+           atom     50   O  
+      Ex  (       -2.08452        0.62040        1.53615 )
+      Ey  (        0.51494       -1.03986       -0.86039 )
+      Ez  (        1.25739       -0.70508       -2.52669 )
+           atom     51   O  
+      Ex  (       -0.80941        0.22125       -0.02296 )
+      Ey  (        0.11579       -2.31497        1.76054 )
+      Ez  (       -0.01808        1.44147       -2.52669 )
+           atom     52   O  
+      Ex  (       -1.79264       -0.68346       -1.51319 )
+      Ey  (       -0.78892       -1.33174       -0.90015 )
+      Ez  (       -1.23931       -0.73639       -2.52669 )
+           atom     53   O  
+      Ex  (       -2.08452        0.62040        1.53615 )
+      Ey  (        0.51494       -1.03986       -0.86039 )
+      Ez  (        1.25739       -0.70508       -2.52669 )
+           atom     54   O  
+      Ex  (       -0.80941        0.22125       -0.02296 )
+      Ey  (        0.11579       -2.31497        1.76054 )
+      Ez  (       -0.01808        1.44147       -2.52669 )
+           atom     55   O  
+      Ex  (       -0.77876        0.12543       -0.08143 )
+      Ey  (       -0.00413       -1.79243        1.61151 )
+      Ez  (       -0.16581        1.60184       -3.14938 )
+           atom     56   O  
+      Ex  (       -1.48649       -0.40447       -1.35489 )
+      Ey  (       -0.53403       -1.08470       -0.87627 )
+      Ez  (       -1.30433       -0.94452       -3.14938 )
+           atom     57   O  
+      Ex  (       -1.59154        0.47338        1.43632 )
+      Ey  (        0.34383       -0.97966       -0.73523 )
+      Ez  (        1.47014       -0.65732       -3.14938 )
+           atom     58   O  
+      Ex  (       -0.77876        0.12543       -0.08143 )
+      Ey  (       -0.00413       -1.79243        1.61151 )
+      Ez  (       -0.16581        1.60184       -3.14938 )
+           atom     59   O  
+      Ex  (       -1.48649       -0.40447       -1.35489 )
+      Ey  (       -0.53403       -1.08470       -0.87627 )
+      Ez  (       -1.30433       -0.94452       -3.14938 )
+           atom     60   O  
+      Ex  (       -3.00526        1.19864       -0.16572 )
+      Ey  (        1.31889       -1.57847       -0.01294 )
+      Ez  (        0.03054       -0.12302       -0.79199 )
+           atom     61   O  
+      Ex  (       -0.84505       -0.07169        0.09407 )
+      Ey  (        0.04856       -3.73868       -0.13705 )
+      Ez  (        0.09127        0.08795       -0.79199 )
+           atom     62   O  
+      Ex  (       -3.02529       -1.30732        0.07165 )
+      Ey  (       -1.18707       -1.55844        0.14999 )
+      Ez  (       -0.12180        0.03506       -0.79199 )
+           atom     63   O  
+      Ex  (       -3.00526        1.19864       -0.16572 )
+      Ey  (        1.31889       -1.57847       -0.01294 )
+      Ez  (        0.03054       -0.12302       -0.79199 )
+           atom     64   O  
+      Ex  (       -0.84505       -0.07169        0.09407 )
+      Ey  (        0.04856       -3.73868       -0.13705 )
+      Ez  (        0.09127        0.08795       -0.79199 )
+           atom     65   O  
+      Ex  (       -0.97392        1.07256       -0.39321 )
+      Ey  (        0.99163       -4.30769        1.58982 )
+      Ez  (       -0.28690        1.34455       -1.25381 )
+           atom     66   O  
+      Ex  (       -2.58043       -1.91915       -1.18022 )
+      Ey  (       -2.00007       -2.70119       -1.13544 )
+      Ez  (       -1.02097       -0.92074       -1.25381 )
+           atom     67   O  
+      Ex  (       -4.36807        0.96798        1.57343 )
+      Ey  (        0.88705       -0.91354       -0.45438 )
+      Ez  (        1.30787       -0.42381       -1.25381 )
+           atom     68   O  
+      Ex  (       -0.97392        1.07256       -0.39321 )
+      Ey  (        0.99163       -4.30769        1.58982 )
+      Ez  (       -0.28690        1.34455       -1.25381 )
+           atom     69   O  
+      Ex  (       -2.58043       -1.91915       -1.18022 )
+      Ey  (       -2.00007       -2.70119       -1.13544 )
+      Ez  (       -1.02097       -0.92074       -1.25381 )
+           atom     70   O  
+      Ex  (       -0.73980        0.09871        0.00440 )
+      Ey  (       -0.02551       -2.07591       -1.80064 )
+      Ez  (        0.02507       -1.55087       -2.76194 )
+           atom     71   O  
+      Ex  (       -1.71019       -0.53474        1.55720 )
+      Ey  (       -0.65897       -1.10553        0.90413 )
+      Ez  (        1.33056        0.79714       -2.76194 )
+           atom     72   O  
+      Ex  (       -1.77358        0.62237       -1.56160 )
+      Ey  (        0.49814       -1.04213        0.89651 )
+      Ez  (       -1.35563        0.75372       -2.76194 )
+           atom     73   O  
+      Ex  (       -0.73980        0.09871        0.00440 )
+      Ey  (       -0.02551       -2.07591       -1.80064 )
+      Ez  (        0.02507       -1.55087       -2.76194 )
+           atom     74   O  
+      Ex  (       -1.71019       -0.53474        1.55720 )
+      Ey  (       -0.65897       -1.10553        0.90413 )
+      Ez  (        1.33056        0.79714       -2.76194 )
+           atom     75   O  
+      Ex  (       -0.91854        0.20455        0.14553 )
+      Ey  (        0.19361       -2.15249       -1.73536 )
+      Ez  (        0.18364       -1.44443       -2.54120 )
+           atom     76   O  
+      Ex  (       -1.67159       -0.62838        1.43010 )
+      Ey  (       -0.63932       -1.39944        0.99372 )
+      Ez  (        1.15909        0.88125       -2.54120 )
+           atom     77   O  
+      Ex  (       -2.01641        0.44025       -1.57563 )
+      Ey  (        0.42930       -1.05462        0.74164 )
+      Ez  (       -1.34273        0.56318       -2.54120 )
+           atom     78   O  
+      Ex  (       -0.91854        0.20455        0.14553 )
+      Ey  (        0.19361       -2.15249       -1.73536 )
+      Ez  (        0.18364       -1.44443       -2.54120 )
+           atom     79   O  
+      Ex  (       -1.67159       -0.62838        1.43010 )
+      Ey  (       -0.63932       -1.39944        0.99372 )
+      Ez  (        1.15909        0.88125       -2.54120 )
+           atom     80   O  
+      Ex  (       -2.45896       -1.90508        1.14917 )
+      Ey  (       -1.92262       -2.75043        1.14178 )
+      Ez  (        0.95524        0.92338       -1.24431 )
+           atom     81   O  
+      Ex  (       -4.33500        0.83948       -1.56339 )
+      Ey  (        0.82195       -0.87439        0.42432 )
+      Ez  (       -1.27730        0.36557       -1.24431 )
+           atom     82   O  
+      Ex  (       -1.02012        1.09190        0.41422 )
+      Ey  (        1.07437       -4.18927       -1.56610 )
+      Ez  (        0.32205       -1.28896       -1.24431 )
+           atom     83   O  
+      Ex  (       -2.45896       -1.90508        1.14917 )
+      Ey  (       -1.92262       -2.75043        1.14178 )
+      Ez  (        0.95524        0.92338       -1.24431 )
+           atom     84   O  
+      Ex  (       -4.33500        0.83948       -1.56339 )
+      Ey  (        0.82195       -0.87439        0.42432 )
+      Ez  (       -1.27730        0.36557       -1.24431 )
+           atom     85   O  
+      Ex  (       -2.97457        1.36063        0.08296 )
+      Ey  (        1.46244       -1.74176        0.03719 )
+      Ez  (        0.20502       -0.13828       -0.76796 )
+           atom     86   O  
+      Ex  (       -0.82754       -0.22286       -0.07368 )
+      Ey  (       -0.12104       -3.88879        0.05325 )
+      Ez  (        0.01724        0.24670       -0.76796 )
+           atom     87   O  
+      Ex  (       -3.27239       -1.29049       -0.00928 )
+      Ey  (       -1.18868       -1.44394       -0.09044 )
+      Ez  (       -0.22227       -0.10841       -0.76796 )
+           atom     88   O  
+      Ex  (       -2.97457        1.36063        0.08296 )
+      Ey  (        1.46244       -1.74176        0.03719 )
+      Ez  (        0.20502       -0.13828       -0.76796 )
+           atom     89   O  
+      Ex  (       -0.82754       -0.22286       -0.07368 )
+      Ey  (       -0.12104       -3.88879        0.05325 )
+      Ez  (        0.01724        0.24670       -0.76796 )
+           atom     90   O  
+      Ex  (       -0.79889       -0.23909        0.00622 )
+      Ey  (       -0.15599       -3.85264        0.14604 )
+      Ez  (       -0.08984       -0.05829       -0.74955 )
+           atom     91   O  
+      Ex  (       -3.26027       -1.26509       -0.12959 )
+      Ey  (       -1.18200       -1.39125       -0.06764 )
+      Ez  (        0.09541       -0.04866       -0.74955 )
+           atom     92   O  
+      Ex  (       -2.91813        1.37953        0.12337 )
+      Ey  (        1.46263       -1.73340       -0.07841 )
+      Ez  (       -0.00556        0.10695       -0.74955 )
+           atom     93   O  
+      Ex  (       -0.79889       -0.23909        0.00622 )
+      Ey  (       -0.15599       -3.85264        0.14604 )
+      Ez  (       -0.08984       -0.05829       -0.74955 )
+           atom     94   O  
+      Ex  (       -3.26027       -1.26509       -0.12959 )
+      Ey  (       -1.18200       -1.39125       -0.06764 )
+      Ez  (        0.09541       -0.04866       -0.74955 )
+           atom     95   O  
+      Ex  (       -2.48776       -1.84040        1.06820 )
+      Ey  (       -1.89502       -2.71187        0.96423 )
+      Ez  (        0.96357        0.79394       -1.21366 )
+           atom     96   O  
+      Ex  (       -4.27333        0.86412       -1.36915 )
+      Ey  (        0.80950       -0.92630        0.44297 )
+      Ez  (       -1.16936        0.43751       -1.21366 )
+           atom     97   O  
+      Ex  (       -1.03836        1.05821        0.30095 )
+      Ey  (        1.00359       -4.16127       -1.40720 )
+      Ez  (        0.20579       -1.23145       -1.21366 )
+           atom     98   O  
+      Ex  (       -2.48776       -1.84040        1.06820 )
+      Ey  (       -1.89502       -2.71187        0.96423 )
+      Ez  (        0.96357        0.79394       -1.21366 )
+           atom     99   O  
+      Ex  (       -4.27333        0.86412       -1.36915 )
+      Ey  (        0.80950       -0.92630        0.44297 )
+      Ez  (       -1.16936        0.43751       -1.21366 )
+
+
+     Representation #192 modes # 286287
+
+     Self-consistent Calculation
+
+      iter #  10 total cpu time :  1159.0 secs   av.it.:   3.9
+      thresh= 0.179E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.131E-13
+
+      iter #  11 total cpu time :  3446.0 secs   av.it.:  24.0
+      thresh= 0.115E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.718E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #193 modes # 288289
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :  6552.9 secs   av.it.:   6.0
+      thresh= 0.100E-01 alpha_mix =  0.700 |ddv_scf|^2 =  0.261E-08
+
+      iter #   2 total cpu time :  8882.2 secs   av.it.:  25.0
+      thresh= 0.511E-05 alpha_mix =  0.700 |ddv_scf|^2 =  0.131E-07
+
+      iter #   3 total cpu time : 10957.8 secs   av.it.:  22.0
+      thresh= 0.114E-04 alpha_mix =  0.700 |ddv_scf|^2 =  0.105E-08
+
+      iter #   4 total cpu time : 13240.9 secs   av.it.:  22.5
+      thresh= 0.325E-05 alpha_mix =  0.700 |ddv_scf|^2 =  0.253E-09
+
+      iter #   5 total cpu time : 15454.2 secs   av.it.:  23.0
+      thresh= 0.159E-05 alpha_mix =  0.700 |ddv_scf|^2 =  0.293E-10
+
+      iter #   6 total cpu time : 17694.7 secs   av.it.:  23.0
+      thresh= 0.541E-06 alpha_mix =  0.700 |ddv_scf|^2 =  0.146E-11
+
+      iter #   7 total cpu time : 19925.8 secs   av.it.:  24.0
+      thresh= 0.121E-06 alpha_mix =  0.700 |ddv_scf|^2 =  0.594E-12
+
+      iter #   8 total cpu time : 22399.8 secs   av.it.:  23.0
+      thresh= 0.770E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.297E-13
+
+      iter #   9 total cpu time : 24721.9 secs   av.it.:  24.5
+      thresh= 0.172E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.116E-13
+
+      iter #  10 total cpu time : 26802.8 secs   av.it.:  24.0
+      thresh= 0.108E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.287E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #194 modes # 290291
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time : 29868.4 secs   av.it.:   8.0
+      thresh= 0.100E-01 alpha_mix =  0.700 |ddv_scf|^2 =  0.235E-07
+
+      iter #   2 total cpu time : 32163.1 secs   av.it.:  25.0
+      thresh= 0.153E-04 alpha_mix =  0.700 |ddv_scf|^2 =  0.156E-06
+
+      iter #   3 total cpu time : 34191.1 secs   av.it.:  22.0
+      thresh= 0.395E-04 alpha_mix =  0.700 |ddv_scf|^2 =  0.662E-08
+
+      iter #   4 total cpu time : 36266.5 secs   av.it.:  23.0
+      thresh= 0.814E-05 alpha_mix =  0.700 |ddv_scf|^2 =  0.161E-08
+
+      iter #   5 total cpu time : 38407.6 secs   av.it.:  23.0
+      thresh= 0.401E-05 alpha_mix =  0.700 |ddv_scf|^2 =  0.238E-10
+
+      iter #   6 total cpu time : 40447.8 secs   av.it.:  25.0
+      thresh= 0.488E-06 alpha_mix =  0.700 |ddv_scf|^2 =  0.189E-10
+
+      iter #   7 total cpu time : 42617.6 secs   av.it.:  24.0
+      thresh= 0.435E-06 alpha_mix =  0.700 |ddv_scf|^2 =  0.209E-11
+
+      iter #   8 total cpu time : 44542.1 secs   av.it.:  23.0
+      thresh= 0.145E-06 alpha_mix =  0.700 |ddv_scf|^2 =  0.316E-12
+
+      iter #   9 total cpu time : 46714.0 secs   av.it.:  25.0
+      thresh= 0.562E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.268E-12
+
+      iter #  10 total cpu time : 48684.0 secs   av.it.:  23.0
+      thresh= 0.517E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.116E-13
+
+      iter #  11 total cpu time : 50967.9 secs   av.it.:  26.0
+      thresh= 0.108E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.341E-13
+
+      iter #  12 total cpu time : 52740.9 secs   av.it.:  23.0
+      thresh= 0.185E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.208E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #195 modes # 292293
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time : 55820.0 secs   av.it.:   7.0
+      thresh= 0.100E-01 alpha_mix =  0.700 |ddv_scf|^2 =  0.740E-08
+
+      iter #   2 total cpu time : 57992.4 secs   av.it.:  25.6
+      thresh= 0.860E-05 alpha_mix =  0.700 |ddv_scf|^2 =  0.429E-07
+
+      iter #   3 total cpu time : 60032.0 secs   av.it.:  22.0
+      thresh= 0.207E-04 alpha_mix =  0.700 |ddv_scf|^2 =  0.324E-08
+
+      iter #   4 total cpu time : 61922.2 secs   av.it.:  22.0
+      thresh= 0.569E-05 alpha_mix =  0.700 |ddv_scf|^2 =  0.434E-09
+
+      iter #   5 total cpu time : 63787.1 secs   av.it.:  24.0
+      thresh= 0.208E-05 alpha_mix =  0.700 |ddv_scf|^2 =  0.274E-10
+
+      iter #   6 total cpu time : 65804.2 secs   av.it.:  24.0
+      thresh= 0.523E-06 alpha_mix =  0.700 |ddv_scf|^2 =  0.465E-11
+
+      iter #   7 total cpu time : 67848.7 secs   av.it.:  24.0
+      thresh= 0.216E-06 alpha_mix =  0.700 |ddv_scf|^2 =  0.136E-11
+
+      iter #   8 total cpu time : 69829.8 secs   av.it.:  23.9
+      thresh= 0.117E-06 alpha_mix =  0.700 |ddv_scf|^2 =  0.524E-13
+
+      iter #   9 total cpu time : 72018.1 secs   av.it.:  26.0
+      thresh= 0.229E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.107E-12
+
+      iter #  10 total cpu time : 73972.7 secs   av.it.:  23.0
+      thresh= 0.327E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.207E-13
+
+      iter #  11 total cpu time : 76082.5 secs   av.it.:  22.1
+      thresh= 0.144E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.297E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #196 modes # 294295
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time : 79026.2 secs   av.it.:   7.0
+      thresh= 0.100E-01 alpha_mix =  0.700 |ddv_scf|^2 =  0.538E-08
+
+      iter #   2 total cpu time : 81106.2 secs   av.it.:  25.8
+      thresh= 0.734E-05 alpha_mix =  0.700 |ddv_scf|^2 =  0.156E-07
+
+      iter #   3 total cpu time : 83105.3 secs   av.it.:  24.0
+      thresh= 0.125E-04 alpha_mix =  0.700 |ddv_scf|^2 =  0.144E-08
+
+      iter #   4 total cpu time : 85242.1 secs   av.it.:  24.0
+      thresh= 0.380E-05 alpha_mix =  0.700 |ddv_scf|^2 =  0.455E-09
+
+      iter #   5 total cpu time : 87197.1 secs   av.it.:  22.0
+      thresh= 0.213E-05 alpha_mix =  0.700 |ddv_scf|^2 =  0.405E-10
+
+      iter #   6 total cpu time : 89262.9 secs   av.it.:  23.0
+      thresh= 0.637E-06 alpha_mix =  0.700 |ddv_scf|^2 =  0.311E-11
+
+      iter #   7 total cpu time : 91434.1 secs   av.it.:  24.0
+      thresh= 0.176E-06 alpha_mix =  0.700 |ddv_scf|^2 =  0.148E-11
+
+      iter #   8 total cpu time : 93461.5 secs   av.it.:  24.0
+      thresh= 0.122E-06 alpha_mix =  0.700 |ddv_scf|^2 =  0.695E-13
+
+      iter #   9 total cpu time : 95671.9 secs   av.it.:  25.0
+      thresh= 0.264E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.495E-13
+
+      iter #  10 total cpu time : 97673.7 secs   av.it.:  24.8
+      thresh= 0.222E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.550E-13
+
+      iter #  11 total cpu time : 99682.0 secs   av.it.:  23.0
+      thresh= 0.235E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.306E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #197 modes # 296297
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :102633.8 secs   av.it.:   7.0
+      thresh= 0.100E-01 alpha_mix =  0.700 |ddv_scf|^2 =  0.534E-08
+
+      iter #   2 total cpu time :104904.0 secs   av.it.:  26.0
+      thresh= 0.731E-05 alpha_mix =  0.700 |ddv_scf|^2 =  0.254E-07
+
+      iter #   3 total cpu time :106904.7 secs   av.it.:  23.0
+      thresh= 0.159E-04 alpha_mix =  0.700 |ddv_scf|^2 =  0.306E-08
+
+      iter #   4 total cpu time :108914.7 secs   av.it.:  22.0
+      thresh= 0.553E-05 alpha_mix =  0.700 |ddv_scf|^2 =  0.471E-09
+
+      iter #   5 total cpu time :110897.2 secs   av.it.:  23.0
+      thresh= 0.217E-05 alpha_mix =  0.700 |ddv_scf|^2 =  0.212E-10
+
+      iter #   6 total cpu time :112957.5 secs   av.it.:  24.6
+      thresh= 0.460E-06 alpha_mix =  0.700 |ddv_scf|^2 =  0.354E-11
+
+      iter #   7 total cpu time :115004.4 secs   av.it.:  24.0
+      thresh= 0.188E-06 alpha_mix =  0.700 |ddv_scf|^2 =  0.109E-11
+
+      iter #   8 total cpu time :117012.6 secs   av.it.:  24.0
+      thresh= 0.104E-06 alpha_mix =  0.700 |ddv_scf|^2 =  0.658E-13
+
+      iter #   9 total cpu time :119126.5 secs   av.it.:  25.0
+      thresh= 0.257E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.392E-13
+
+      iter #  10 total cpu time :121258.2 secs   av.it.:  24.8
+      thresh= 0.198E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.505E-13
+
+      iter #  11 total cpu time :123161.8 secs   av.it.:  22.0
+      thresh= 0.225E-07 alpha_mix =  0.700 |ddv_scf|^2 =  0.189E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+ 
+     Number of q in the star =    1
+     List of q in the star:
+          1   0.000000000   0.000000000   0.000000000
+
+          Dielectric constant in cartesian axis 
+
+          (       3.944515191       0.000000002       0.000000000 )
+          (      -0.000000002       3.944515191       0.000000000 )
+          (       0.000000000       0.000000000       3.899689105 )
+
+          Effective charges (d Force / dE) in cartesian axis
+
+           atom      1   Th 
+      Ex  (        7.09443       -0.68925        0.00000 )
+      Ey  (        0.68925        7.09443        0.00000 )
+      Ez  (        0.00000        0.00000        5.25684 )
+           atom      2   Th 
+      Ex  (        7.54624       -0.59588        0.00000 )
+      Ey  (        0.59588        7.54624        0.00000 )
+      Ez  (        0.00000        0.00000        5.23706 )
+           atom      3   Th 
+      Ex  (        6.71262       -1.24938        0.19265 )
+      Ey  (        1.23580        6.64218       -0.67960 )
+      Ez  (        0.14250        0.87094        8.33393 )
+           atom      4   Th 
+      Ex  (        7.09443       -0.68925        0.00000 )
+      Ey  (        0.68925        7.09443        0.00000 )
+      Ez  (        0.00000        0.00000        5.25684 )
+           atom      5   Th 
+      Ex  (        6.65391       -1.26970        0.49222 )
+      Ey  (        1.21548        6.70089        0.50664 )
+      Ez  (       -0.82551       -0.31206        8.33393 )
+           atom      6   Th 
+      Ex  (        6.66567       -1.20869       -0.68487 )
+      Ey  (        1.27649        6.68913        0.17296 )
+      Ez  (        0.68301       -0.55888        8.33393 )
+           atom      7   Th 
+      Ex  (        6.71262       -1.24938        0.19265 )
+      Ey  (        1.23580        6.64218       -0.67960 )
+      Ez  (        0.14250        0.87094        8.33393 )
+           atom      8   Th 
+      Ex  (        6.65391       -1.26970        0.49222 )
+      Ey  (        1.21548        6.70089        0.50664 )
+      Ez  (       -0.82551       -0.31206        8.33393 )
+           atom      9   Th 
+      Ex  (        6.66567       -1.20869       -0.68487 )
+      Ey  (        1.27649        6.68913        0.17296 )
+      Ez  (        0.68301       -0.55888        8.33393 )
+           atom     10   Mo 
+      Ex  (        4.42304        0.16430       -0.06194 )
+      Ey  (       -0.81944        4.19106        0.35969 )
+      Ez  (       -0.18368        0.31952        4.00727 )
+           atom     11   Mo 
+      Ex  (        4.42057        0.26641       -0.06822 )
+      Ey  (       -0.81846        4.05285        0.01037 )
+      Ez  (        0.15540        0.45453        3.99203 )
+           atom     12   Mo 
+      Ex  (        3.94399        0.44434        0.13023 )
+      Ey  (       -0.35399        4.61618        0.28017 )
+      Ez  (        0.27127        0.05481        3.93622 )
+           atom     13   Mo 
+      Ex  (        3.96537        0.55520       -0.28053 )
+      Ey  (       -0.42854        4.64873       -0.23349 )
+      Ez  (       -0.18487       -0.31883        4.00727 )
+           atom     14   Mo 
+      Ex  (        4.53274        0.75610        0.34247 )
+      Ey  (       -0.22763        4.08136       -0.12620 )
+      Ez  (        0.36855       -0.00068        4.00727 )
+           atom     15   Mo 
+      Ex  (        4.42304        0.16430       -0.06194 )
+      Ey  (       -0.81944        4.19106        0.35969 )
+      Ez  (       -0.18368        0.31952        4.00727 )
+           atom     16   Mo 
+      Ex  (        3.96537        0.55520       -0.28053 )
+      Ey  (       -0.42854        4.64873       -0.23349 )
+      Ez  (       -0.18487       -0.31883        4.00727 )
+           atom     17   Mo 
+      Ex  (        4.53274        0.75610        0.34247 )
+      Ey  (       -0.22763        4.08136       -0.12620 )
+      Ez  (        0.36855       -0.00068        4.00727 )
+           atom     18   Mo 
+      Ex  (        3.90574        0.52122        0.02513 )
+      Ey  (       -0.56365        4.56768       -0.06427 )
+      Ez  (       -0.47133       -0.09268        3.99203 )
+           atom     19   Mo 
+      Ex  (        4.38382        0.83967        0.04310 )
+      Ey  (       -0.24520        4.08960        0.05390 )
+      Ez  (        0.31593       -0.36185        3.99203 )
+           atom     20   Mo 
+      Ex  (        4.42057        0.26641       -0.06822 )
+      Ey  (       -0.81846        4.05285        0.01037 )
+      Ez  (        0.15540        0.45453        3.99203 )
+           atom     21   Mo 
+      Ex  (        3.90574        0.52122        0.02513 )
+      Ey  (       -0.56365        4.56768       -0.06427 )
+      Ez  (       -0.47133       -0.09268        3.99203 )
+           atom     22   Mo 
+      Ex  (        4.38382        0.83967        0.04310 )
+      Ey  (       -0.24520        4.08960        0.05390 )
+      Ez  (        0.31593       -0.36185        3.99203 )
+           atom     23   Mo 
+      Ex  (        4.48726        0.66764       -0.30775 )
+      Ey  (       -0.13069        4.07291       -0.02731 )
+      Ez  (       -0.18310        0.20752        3.93622 )
+           atom     24   Mo 
+      Ex  (        4.40901        0.08551        0.17752 )
+      Ey  (       -0.71282        4.15116       -0.25286 )
+      Ez  (       -0.08817       -0.26233        3.93622 )
+           atom     25   Mo 
+      Ex  (        3.94399        0.44434        0.13023 )
+      Ey  (       -0.35399        4.61618        0.28017 )
+      Ez  (        0.27127        0.05481        3.93622 )
+           atom     26   Mo 
+      Ex  (        4.48726        0.66764       -0.30775 )
+      Ey  (       -0.13069        4.07291       -0.02731 )
+      Ez  (       -0.18310        0.20752        3.93622 )
+           atom     27   Mo 
+      Ex  (        4.40901        0.08551        0.17752 )
+      Ey  (       -0.71282        4.15116       -0.25286 )
+      Ez  (       -0.08817       -0.26233        3.93622 )
+           atom     28   O  
+      Ex  (       -1.51713        0.40172       -1.37351 )
+      Ey  (        0.30609       -1.06170        0.62062 )
+      Ez  (       -1.44314        0.56194       -3.10099 )
+           atom     29   O  
+      Ex  (       -1.01190        0.10573       -0.29218 )
+      Ey  (        0.07213       -1.85547        1.58523 )
+      Ez  (       -0.37245        1.63133       -3.00833 )
+           atom     30   O  
+      Ex  (       -1.79264       -0.68346       -1.51319 )
+      Ey  (       -0.78892       -1.33174       -0.90015 )
+      Ez  (       -1.23931       -0.73639       -2.52669 )
+           atom     31   O  
+      Ex  (       -1.59154        0.47338        1.43632 )
+      Ey  (        0.34383       -0.97966       -0.73523 )
+      Ez  (        1.47014       -0.65732       -3.14938 )
+           atom     32   O  
+      Ex  (       -3.02529       -1.30732        0.07165 )
+      Ey  (       -1.18707       -1.55844        0.14999 )
+      Ez  (       -0.12180        0.03506       -0.79199 )
+           atom     33   O  
+      Ex  (       -4.36807        0.96798        1.57343 )
+      Ey  (        0.88705       -0.91354       -0.45438 )
+      Ez  (        1.30787       -0.42381       -1.25381 )
+           atom     34   O  
+      Ex  (       -1.77358        0.62237       -1.56160 )
+      Ey  (        0.49814       -1.04213        0.89651 )
+      Ez  (       -1.35563        0.75372       -2.76194 )
+           atom     35   O  
+      Ex  (       -2.01641        0.44025       -1.57563 )
+      Ey  (        0.42930       -1.05462        0.74164 )
+      Ez  (       -1.34273        0.56318       -2.54120 )
+           atom     36   O  
+      Ex  (       -1.02012        1.09190        0.41422 )
+      Ey  (        1.07437       -4.18927       -1.56610 )
+      Ez  (        0.32205       -1.28896       -1.24431 )
+           atom     37   O  
+      Ex  (       -3.27239       -1.29049       -0.00928 )
+      Ey  (       -1.18868       -1.44394       -0.09044 )
+      Ez  (       -0.22227       -0.10841       -0.76796 )
+           atom     38   O  
+      Ex  (       -2.91813        1.37953        0.12337 )
+      Ey  (        1.46263       -1.73340       -0.07841 )
+      Ez  (       -0.00556        0.10695       -0.74955 )
+           atom     39   O  
+      Ex  (       -1.03836        1.05821        0.30095 )
+      Ey  (        1.00359       -4.16127       -1.40720 )
+      Ez  (        0.20579       -1.23145       -1.21366 )
+           atom     40   O  
+      Ex  (       -0.86907        0.06807        0.14928 )
+      Ey  (       -0.02756       -1.70977       -1.49980 )
+      Ez  (        0.23492       -1.53077       -3.10099 )
+           atom     41   O  
+      Ex  (       -1.48205       -0.32635        1.22423 )
+      Ey  (       -0.42197       -1.09679        0.87918 )
+      Ez  (        1.20822        0.96883       -3.10099 )
+           atom     42   O  
+      Ex  (       -1.51713        0.40172       -1.37351 )
+      Ey  (        0.30609       -1.06170        0.62062 )
+      Ez  (       -1.44314        0.56194       -3.10099 )
+           atom     43   O  
+      Ex  (       -0.86907        0.06807        0.14928 )
+      Ey  (       -0.02756       -1.70977       -1.49980 )
+      Ez  (        0.23492       -1.53077       -3.10099 )
+           atom     44   O  
+      Ex  (       -1.48205       -0.32635        1.22423 )
+      Ey  (       -0.42197       -1.09679        0.87918 )
+      Ez  (        1.20822        0.96883       -3.10099 )
+           atom     45   O  
+      Ex  (       -1.56756       -0.39294       -1.22676 )
+      Ey  (       -0.42654       -1.29981       -1.04565 )
+      Ez  (       -1.22655       -1.13821       -3.00833 )
+           atom     46   O  
+      Ex  (       -1.72159        0.33761        1.51894 )
+      Ey  (        0.30401       -1.14577       -0.53958 )
+      Ez  (        1.59900       -0.49312       -3.00833 )
+           atom     47   O  
+      Ex  (       -1.01190        0.10573       -0.29218 )
+      Ey  (        0.07213       -1.85547        1.58523 )
+      Ez  (       -0.37245        1.63133       -3.00833 )
+           atom     48   O  
+      Ex  (       -1.56756       -0.39294       -1.22676 )
+      Ey  (       -0.42654       -1.29981       -1.04565 )
+      Ez  (       -1.22655       -1.13821       -3.00833 )
+           atom     49   O  
+      Ex  (       -1.72159        0.33761        1.51894 )
+      Ey  (        0.30401       -1.14577       -0.53958 )
+      Ez  (        1.59900       -0.49312       -3.00833 )
+           atom     50   O  
+      Ex  (       -2.08452        0.62040        1.53615 )
+      Ey  (        0.51494       -1.03986       -0.86039 )
+      Ez  (        1.25739       -0.70508       -2.52669 )
+           atom     51   O  
+      Ex  (       -0.80941        0.22125       -0.02296 )
+      Ey  (        0.11579       -2.31497        1.76054 )
+      Ez  (       -0.01808        1.44147       -2.52669 )
+           atom     52   O  
+      Ex  (       -1.79264       -0.68346       -1.51319 )
+      Ey  (       -0.78892       -1.33174       -0.90015 )
+      Ez  (       -1.23931       -0.73639       -2.52669 )
+           atom     53   O  
+      Ex  (       -2.08452        0.62040        1.53615 )
+      Ey  (        0.51494       -1.03986       -0.86039 )
+      Ez  (        1.25739       -0.70508       -2.52669 )
+           atom     54   O  
+      Ex  (       -0.80941        0.22125       -0.02296 )
+      Ey  (        0.11579       -2.31497        1.76054 )
+      Ez  (       -0.01808        1.44147       -2.52669 )
+           atom     55   O  
+      Ex  (       -0.77876        0.12543       -0.08143 )
+      Ey  (       -0.00413       -1.79243        1.61151 )
+      Ez  (       -0.16581        1.60184       -3.14938 )
+           atom     56   O  
+      Ex  (       -1.48649       -0.40447       -1.35489 )
+      Ey  (       -0.53403       -1.08470       -0.87627 )
+      Ez  (       -1.30433       -0.94452       -3.14938 )
+           atom     57   O  
+      Ex  (       -1.59154        0.47338        1.43632 )
+      Ey  (        0.34383       -0.97966       -0.73523 )
+      Ez  (        1.47014       -0.65732       -3.14938 )
+           atom     58   O  
+      Ex  (       -0.77876        0.12543       -0.08143 )
+      Ey  (       -0.00413       -1.79243        1.61151 )
+      Ez  (       -0.16581        1.60184       -3.14938 )
+           atom     59   O  
+      Ex  (       -1.48649       -0.40447       -1.35489 )
+      Ey  (       -0.53403       -1.08470       -0.87627 )
+      Ez  (       -1.30433       -0.94452       -3.14938 )
+           atom     60   O  
+      Ex  (       -3.00526        1.19864       -0.16572 )
+      Ey  (        1.31889       -1.57847       -0.01294 )
+      Ez  (        0.03054       -0.12302       -0.79199 )
+           atom     61   O  
+      Ex  (       -0.84505       -0.07169        0.09407 )
+      Ey  (        0.04856       -3.73868       -0.13705 )
+      Ez  (        0.09127        0.08795       -0.79199 )
+           atom     62   O  
+      Ex  (       -3.02529       -1.30732        0.07165 )
+      Ey  (       -1.18707       -1.55844        0.14999 )
+      Ez  (       -0.12180        0.03506       -0.79199 )
+           atom     63   O  
+      Ex  (       -3.00526        1.19864       -0.16572 )
+      Ey  (        1.31889       -1.57847       -0.01294 )
+      Ez  (        0.03054       -0.12302       -0.79199 )
+           atom     64   O  
+      Ex  (       -0.84505       -0.07169        0.09407 )
+      Ey  (        0.04856       -3.73868       -0.13705 )
+      Ez  (        0.09127        0.08795       -0.79199 )
+           atom     65   O  
+      Ex  (       -0.97392        1.07256       -0.39321 )
+      Ey  (        0.99163       -4.30769        1.58982 )
+      Ez  (       -0.28690        1.34455       -1.25381 )
+           atom     66   O  
+      Ex  (       -2.58043       -1.91915       -1.18022 )
+      Ey  (       -2.00007       -2.70119       -1.13544 )
+      Ez  (       -1.02097       -0.92074       -1.25381 )
+           atom     67   O  
+      Ex  (       -4.36807        0.96798        1.57343 )
+      Ey  (        0.88705       -0.91354       -0.45438 )
+      Ez  (        1.30787       -0.42381       -1.25381 )
+           atom     68   O  
+      Ex  (       -0.97392        1.07256       -0.39321 )
+      Ey  (        0.99163       -4.30769        1.58982 )
+      Ez  (       -0.28690        1.34455       -1.25381 )
+           atom     69   O  
+      Ex  (       -2.58043       -1.91915       -1.18022 )
+      Ey  (       -2.00007       -2.70119       -1.13544 )
+      Ez  (       -1.02097       -0.92074       -1.25381 )
+           atom     70   O  
+      Ex  (       -0.73980        0.09871        0.00440 )
+      Ey  (       -0.02551       -2.07591       -1.80064 )
+      Ez  (        0.02507       -1.55087       -2.76194 )
+           atom     71   O  
+      Ex  (       -1.71019       -0.53474        1.55720 )
+      Ey  (       -0.65897       -1.10553        0.90413 )
+      Ez  (        1.33056        0.79714       -2.76194 )
+           atom     72   O  
+      Ex  (       -1.77358        0.62237       -1.56160 )
+      Ey  (        0.49814       -1.04213        0.89651 )
+      Ez  (       -1.35563        0.75372       -2.76194 )
+           atom     73   O  
+      Ex  (       -0.73980        0.09871        0.00440 )
+      Ey  (       -0.02551       -2.07591       -1.80064 )
+      Ez  (        0.02507       -1.55087       -2.76194 )
+           atom     74   O  
+      Ex  (       -1.71019       -0.53474        1.55720 )
+      Ey  (       -0.65897       -1.10553        0.90413 )
+      Ez  (        1.33056        0.79714       -2.76194 )
+           atom     75   O  
+      Ex  (       -0.91854        0.20455        0.14553 )
+      Ey  (        0.19361       -2.15249       -1.73536 )
+      Ez  (        0.18364       -1.44443       -2.54120 )
+           atom     76   O  
+      Ex  (       -1.67159       -0.62838        1.43010 )
+      Ey  (       -0.63932       -1.39944        0.99372 )
+      Ez  (        1.15909        0.88125       -2.54120 )
+           atom     77   O  
+      Ex  (       -2.01641        0.44025       -1.57563 )
+      Ey  (        0.42930       -1.05462        0.74164 )
+      Ez  (       -1.34273        0.56318       -2.54120 )
+           atom     78   O  
+      Ex  (       -0.91854        0.20455        0.14553 )
+      Ey  (        0.19361       -2.15249       -1.73536 )
+      Ez  (        0.18364       -1.44443       -2.54120 )
+           atom     79   O  
+      Ex  (       -1.67159       -0.62838        1.43010 )
+      Ey  (       -0.63932       -1.39944        0.99372 )
+      Ez  (        1.15909        0.88125       -2.54120 )
+           atom     80   O  
+      Ex  (       -2.45896       -1.90508        1.14917 )
+      Ey  (       -1.92262       -2.75043        1.14178 )
+      Ez  (        0.95524        0.92338       -1.24431 )
+           atom     81   O  
+      Ex  (       -4.33500        0.83948       -1.56339 )
+      Ey  (        0.82195       -0.87439        0.42432 )
+      Ez  (       -1.27730        0.36557       -1.24431 )
+           atom     82   O  
+      Ex  (       -1.02012        1.09190        0.41422 )
+      Ey  (        1.07437       -4.18927       -1.56610 )
+      Ez  (        0.32205       -1.28896       -1.24431 )
+           atom     83   O  
+      Ex  (       -2.45896       -1.90508        1.14917 )
+      Ey  (       -1.92262       -2.75043        1.14178 )
+      Ez  (        0.95524        0.92338       -1.24431 )
+           atom     84   O  
+      Ex  (       -4.33500        0.83948       -1.56339 )
+      Ey  (        0.82195       -0.87439        0.42432 )
+      Ez  (       -1.27730        0.36557       -1.24431 )
+           atom     85   O  
+      Ex  (       -2.97457        1.36063        0.08296 )
+      Ey  (        1.46244       -1.74176        0.03719 )
+      Ez  (        0.20502       -0.13828       -0.76796 )
+           atom     86   O  
+      Ex  (       -0.82754       -0.22286       -0.07368 )
+      Ey  (       -0.12104       -3.88879        0.05325 )
+      Ez  (        0.01724        0.24670       -0.76796 )
+           atom     87   O  
+      Ex  (       -3.27239       -1.29049       -0.00928 )
+      Ey  (       -1.18868       -1.44394       -0.09044 )
+      Ez  (       -0.22227       -0.10841       -0.76796 )
+           atom     88   O  
+      Ex  (       -2.97457        1.36063        0.08296 )
+      Ey  (        1.46244       -1.74176        0.03719 )
+      Ez  (        0.20502       -0.13828       -0.76796 )
+           atom     89   O  
+      Ex  (       -0.82754       -0.22286       -0.07368 )
+      Ey  (       -0.12104       -3.88879        0.05325 )
+      Ez  (        0.01724        0.24670       -0.76796 )
+           atom     90   O  
+      Ex  (       -0.79889       -0.23909        0.00622 )
+      Ey  (       -0.15599       -3.85264        0.14604 )
+      Ez  (       -0.08984       -0.05829       -0.74955 )
+           atom     91   O  
+      Ex  (       -3.26027       -1.26509       -0.12959 )
+      Ey  (       -1.18200       -1.39125       -0.06764 )
+      Ez  (        0.09541       -0.04866       -0.74955 )
+           atom     92   O  
+      Ex  (       -2.91813        1.37953        0.12337 )
+      Ey  (        1.46263       -1.73340       -0.07841 )
+      Ez  (       -0.00556        0.10695       -0.74955 )
+           atom     93   O  
+      Ex  (       -0.79889       -0.23909        0.00622 )
+      Ey  (       -0.15599       -3.85264        0.14604 )
+      Ez  (       -0.08984       -0.05829       -0.74955 )
+           atom     94   O  
+      Ex  (       -3.26027       -1.26509       -0.12959 )
+      Ey  (       -1.18200       -1.39125       -0.06764 )
+      Ez  (        0.09541       -0.04866       -0.74955 )
+           atom     95   O  
+      Ex  (       -2.48776       -1.84040        1.06820 )
+      Ey  (       -1.89502       -2.71187        0.96423 )
+      Ez  (        0.96357        0.79394       -1.21366 )
+           atom     96   O  
+      Ex  (       -4.27333        0.86412       -1.36915 )
+      Ey  (        0.80950       -0.92630        0.44297 )
+      Ez  (       -1.16936        0.43751       -1.21366 )
+           atom     97   O  
+      Ex  (       -1.03836        1.05821        0.30095 )
+      Ey  (        1.00359       -4.16127       -1.40720 )
+      Ez  (        0.20579       -1.23145       -1.21366 )
+           atom     98   O  
+      Ex  (       -2.48776       -1.84040        1.06820 )
+      Ey  (       -1.89502       -2.71187        0.96423 )
+      Ez  (        0.96357        0.79394       -1.21366 )
+           atom     99   O  
+      Ex  (       -4.27333        0.86412       -1.36915 )
+      Ey  (        0.80950       -0.92630        0.44297 )
+      Ez  (       -1.16936        0.43751       -1.21366 )
+
+          Effective charges (d P / du) in cartesian axis 
+
+           atom      1   Th 
+      Px  (        7.23157       -0.73008        0.00000 )
+      Py  (        0.73008        7.23157        0.00000 )
+      Pz  (        0.00000        0.00000        5.32455 )
+           atom      2   Th 
+      Px  (        7.51933       -0.56053        0.00000 )
+      Py  (        0.56053        7.51933        0.00000 )
+      Pz  (        0.00000        0.00000        5.30883 )
+           atom      3   Th 
+      Px  (        6.83621       -1.34058        0.15157 )
+      Py  (        1.21056        6.75007       -0.65144 )
+      Pz  (        0.14487        0.88132        8.45963 )
+           atom      4   Th 
+      Px  (        7.23157       -0.73008        0.00000 )
+      Py  (        0.73008        7.23157        0.00000 )
+      Pz  (        0.00000        0.00000        5.32455 )
+           atom      5   Th 
+      Px  (        6.71531       -1.28037        0.48838 )
+      Py  (        1.27078        6.87098        0.45698 )
+      Pz  (       -0.83568       -0.31520        8.45963 )
+           atom      6   Th 
+      Px  (        6.82791       -1.20576       -0.63994 )
+      Py  (        1.34538        6.75838        0.19446 )
+      Pz  (        0.69081       -0.56612        8.45963 )
+           atom      7   Th 
+      Px  (        6.83621       -1.34058        0.15157 )
+      Py  (        1.21056        6.75007       -0.65144 )
+      Pz  (        0.14487        0.88132        8.45963 )
+           atom      8   Th 
+      Px  (        6.71531       -1.28037        0.48838 )
+      Py  (        1.27078        6.87098        0.45698 )
+      Pz  (       -0.83568       -0.31520        8.45963 )
+           atom      9   Th 
+      Px  (        6.82791       -1.20576       -0.63994 )
+      Py  (        1.34538        6.75838        0.19446 )
+      Pz  (        0.69081       -0.56612        8.45963 )
+           atom     10   Mo 
+      Px  (        4.42514        0.17271       -0.06147 )
+      Py  (       -0.80763        4.19617        0.35629 )
+      Pz  (       -0.18633        0.31761        4.00273 )
+           atom     11   Mo 
+      Px  (        4.42006        0.27355       -0.07218 )
+      Py  (       -0.80665        4.05735        0.01379 )
+      Pz  (        0.15389        0.45745        3.99243 )
+           atom     12   Mo 
+      Px  (        3.94786        0.44447        0.13017 )
+      Py  (       -0.35424        4.61324        0.27717 )
+      Pz  (        0.27089        0.05815        3.93798 )
+           atom     13   Mo 
+      Px  (        3.97848        0.54975       -0.27782 )
+      Py  (       -0.43059        4.64283       -0.23138 )
+      Pz  (       -0.18189       -0.32017        4.00273 )
+           atom     14   Mo 
+      Px  (        4.52834        0.74805        0.33929 )
+      Py  (       -0.23229        4.09297       -0.12491 )
+      Pz  (        0.36823        0.00256        4.00273 )
+           atom     15   Mo 
+      Px  (        4.42514        0.17271       -0.06147 )
+      Py  (       -0.80763        4.19617        0.35629 )
+      Pz  (       -0.18633        0.31761        4.00273 )
+           atom     16   Mo 
+      Px  (        3.97848        0.54975       -0.27782 )
+      Py  (       -0.43059        4.64283       -0.23138 )
+      Pz  (       -0.18189       -0.32017        4.00273 )
+           atom     17   Mo 
+      Px  (        4.52834        0.74805        0.33929 )
+      Py  (       -0.23229        4.09297       -0.12491 )
+      Pz  (        0.36823        0.00256        4.00273 )
+           atom     18   Mo 
+      Px  (        3.91719        0.51632        0.02415 )
+      Py  (       -0.56388        4.56022       -0.06940 )
+      Pz  (       -0.47311       -0.09545        3.99243 )
+           atom     19   Mo 
+      Px  (        4.37887        0.83043        0.04803 )
+      Py  (       -0.24977        4.09854        0.05562 )
+      Pz  (        0.31922       -0.36200        3.99243 )
+           atom     20   Mo 
+      Px  (        4.42006        0.27355       -0.07218 )
+      Py  (       -0.80665        4.05735        0.01379 )
+      Pz  (        0.15389        0.45745        3.99243 )
+           atom     21   Mo 
+      Px  (        3.91719        0.51632        0.02415 )
+      Py  (       -0.56388        4.56022       -0.06940 )
+      Pz  (       -0.47311       -0.09545        3.99243 )
+           atom     22   Mo 
+      Px  (        4.37887        0.83043        0.04803 )
+      Py  (       -0.24977        4.09854        0.05562 )
+      Pz  (        0.31922       -0.36200        3.99243 )
+           atom     23   Mo 
+      Px  (        4.48597        0.66491       -0.30512 )
+      Py  (       -0.13379        4.07514       -0.02586 )
+      Pz  (       -0.18580        0.20552        3.93798 )
+           atom     24   Mo 
+      Px  (        4.40783        0.08868        0.17495 )
+      Py  (       -0.71003        4.15328       -0.25131 )
+      Pz  (       -0.08509       -0.26367        3.93798 )
+           atom     25   Mo 
+      Px  (        3.94786        0.44447        0.13017 )
+      Py  (       -0.35424        4.61324        0.27717 )
+      Pz  (        0.27089        0.05815        3.93798 )
+           atom     26   Mo 
+      Px  (        4.48597        0.66491       -0.30512 )
+      Py  (       -0.13379        4.07514       -0.02586 )
+      Pz  (       -0.18580        0.20552        3.93798 )
+           atom     27   Mo 
+      Px  (        4.40783        0.08868        0.17495 )
+      Py  (       -0.71003        4.15328       -0.25131 )
+      Pz  (       -0.08509       -0.26367        3.93798 )
+           atom     28   O  
+      Px  (       -1.52017        0.39870       -1.36767 )
+      Py  (        0.31043       -1.07427        0.61353 )
+      Pz  (       -1.44346        0.56079       -3.10196 )
+           atom     29   O  
+      Px  (       -1.01098        0.09709       -0.28891 )
+      Py  (        0.07225       -1.85544        1.58462 )
+      Pz  (       -0.37798        1.63022       -3.00816 )
+           atom     30   O  
+      Px  (       -1.79781       -0.68161       -1.51731 )
+      Py  (       -0.78867       -1.32749       -0.89727 )
+      Pz  (       -1.23968       -0.73391       -2.52846 )
+           atom     31   O  
+      Px  (       -1.58982        0.46981        1.43010 )
+      Py  (        0.34366       -0.98000       -0.73945 )
+      Pz  (        1.47253       -0.65144       -3.14686 )
+           atom     32   O  
+      Px  (       -3.03205       -1.31122        0.07570 )
+      Py  (       -1.18175       -1.55142        0.14203 )
+      Pz  (       -0.12141        0.03271       -0.79970 )
+           atom     33   O  
+      Px  (       -4.37014        0.97595        1.57319 )
+      Py  (        0.88571       -0.90811       -0.45703 )
+      Pz  (        1.30648       -0.42342       -1.25277 )
+           atom     34   O  
+      Px  (       -1.77088        0.62577       -1.55524 )
+      Py  (        0.49569       -1.04702        0.89824 )
+      Pz  (       -1.35304        0.75718       -2.76107 )
+           atom     35   O  
+      Px  (       -2.01581        0.43841       -1.57115 )
+      Py  (        0.43617       -1.05612        0.73923 )
+      Pz  (       -1.34240        0.56349       -2.54199 )
+           atom     36   O  
+      Px  (       -1.03148        1.08766        0.41391 )
+      Py  (        1.08126       -4.18290       -1.56474 )
+      Pz  (        0.32126       -1.28845       -1.24308 )
+           atom     37   O  
+      Px  (       -3.28100       -1.28799       -0.00523 )
+      Py  (       -1.18400       -1.44255       -0.09250 )
+      Pz  (       -0.22424       -0.11072       -0.76941 )
+           atom     38   O  
+      Px  (       -2.91788        1.38092        0.12791 )
+      Py  (        1.46613       -1.74090       -0.07934 )
+      Pz  (       -0.00605        0.10802       -0.75274 )
+           atom     39   O  
+      Px  (       -1.03754        1.06992        0.31536 )
+      Py  (        1.00710       -4.15206       -1.40625 )
+      Pz  (        0.20618       -1.23079       -1.21291 )
+           atom     40   O  
+      Px  (       -0.87868        0.05993        0.15250 )
+      Py  (       -0.02833       -1.71576       -1.49120 )
+      Pz  (        0.23607       -1.53047       -3.10196 )
+           atom     41   O  
+      Px  (       -1.49281       -0.32623        1.21517 )
+      Py  (       -0.41450       -1.10164        0.87767 )
+      Pz  (        1.20739        0.96968       -3.10196 )
+           atom     42   O  
+      Px  (       -1.52017        0.39870       -1.36767 )
+      Py  (        0.31043       -1.07427        0.61353 )
+      Pz  (       -1.44346        0.56079       -3.10196 )
+           atom     43   O  
+      Px  (       -0.87868        0.05993        0.15250 )
+      Py  (       -0.02833       -1.71576       -1.49120 )
+      Pz  (        0.23607       -1.53047       -3.10196 )
+           atom     44   O  
+      Px  (       -1.49281       -0.32623        1.21517 )
+      Py  (       -0.41450       -1.10164        0.87767 )
+      Pz  (        1.20739        0.96968       -3.10196 )
+           atom     45   O  
+      Px  (       -1.57100       -0.39558       -1.22786 )
+      Py  (       -0.42042       -1.29542       -1.04252 )
+      Pz  (       -1.22283       -1.14245       -3.00816 )
+           atom     46   O  
+      Px  (       -1.71765        0.33575        1.51678 )
+      Py  (        0.31091       -1.14877       -0.54210 )
+      Pz  (        1.60080       -0.48777       -3.00816 )
+           atom     47   O  
+      Px  (       -1.01098        0.09709       -0.28891 )
+      Py  (        0.07225       -1.85544        1.58462 )
+      Pz  (       -0.37798        1.63022       -3.00816 )
+           atom     48   O  
+      Px  (       -1.57100       -0.39558       -1.22786 )
+      Py  (       -0.42042       -1.29542       -1.04252 )
+      Pz  (       -1.22283       -1.14245       -3.00816 )
+           atom     49   O  
+      Px  (       -1.71765        0.33575        1.51678 )
+      Py  (        0.31091       -1.14877       -0.54210 )
+      Pz  (        1.60080       -0.48777       -3.00816 )
+           atom     50   O  
+      Px  (       -2.08172        0.62476        1.53571 )
+      Py  (        0.51770       -1.04358       -0.86540 )
+      Pz  (        1.25542       -0.70664       -2.52846 )
+           atom     51   O  
+      Px  (       -0.80842        0.21745       -0.01840 )
+      Py  (        0.11038       -2.31689        1.76266 )
+      Pz  (       -0.01574        1.44055       -2.52846 )
+           atom     52   O  
+      Px  (       -1.79781       -0.68161       -1.51731 )
+      Py  (       -0.78867       -1.32749       -0.89727 )
+      Pz  (       -1.23968       -0.73391       -2.52846 )
+           atom     53   O  
+      Px  (       -2.08172        0.62476        1.53571 )
+      Py  (        0.51770       -1.04358       -0.86540 )
+      Pz  (        1.25542       -0.70664       -2.52846 )
+           atom     54   O  
+      Px  (       -0.80842        0.21745       -0.01840 )
+      Py  (        0.11038       -2.31689        1.76266 )
+      Pz  (       -0.01574        1.44055       -2.52846 )
+           atom     55   O  
+      Px  (       -0.78021        0.12376       -0.07467 )
+      Py  (       -0.00238       -1.78961        1.60823 )
+      Pz  (       -0.17210        1.60097       -3.14686 )
+           atom     56   O  
+      Px  (       -1.48470       -0.40436       -1.35543 )
+      Py  (       -0.53050       -1.08512       -0.86878 )
+      Pz  (       -1.30043       -0.94953       -3.14686 )
+           atom     57   O  
+      Px  (       -1.58982        0.46981        1.43010 )
+      Py  (        0.34366       -0.98000       -0.73945 )
+      Pz  (        1.47253       -0.65144       -3.14686 )
+           atom     58   O  
+      Px  (       -0.78021        0.12376       -0.07467 )
+      Py  (       -0.00238       -1.78961        1.60823 )
+      Pz  (       -0.17210        1.60097       -3.14686 )
+           atom     59   O  
+      Px  (       -1.48470       -0.40436       -1.35543 )
+      Py  (       -0.53050       -1.08512       -0.86878 )
+      Pz  (       -1.30043       -0.94953       -3.14686 )
+           atom     60   O  
+      Px  (       -3.00107        1.19964       -0.16086 )
+      Py  (        1.32911       -1.58240       -0.00545 )
+      Pz  (        0.03238       -0.12150       -0.79970 )
+           atom     61   O  
+      Px  (       -0.84209       -0.08262        0.08515 )
+      Py  (        0.04684       -3.74138       -0.13658 )
+      Pz  (        0.08903        0.08879       -0.79970 )
+           atom     62   O  
+      Px  (       -3.03205       -1.31122        0.07570 )
+      Py  (       -1.18175       -1.55142        0.14203 )
+      Pz  (       -0.12141        0.03271       -0.79970 )
+           atom     63   O  
+      Px  (       -3.00107        1.19964       -0.16086 )
+      Py  (        1.32911       -1.58240       -0.00545 )
+      Pz  (        0.03238       -0.12150       -0.79970 )
+           atom     64   O  
+      Px  (       -0.84209       -0.08262        0.08515 )
+      Py  (        0.04684       -3.74138       -0.13658 )
+      Pz  (        0.08903        0.08879       -0.79970 )
+           atom     65   O  
+      Px  (       -0.96749        1.07881       -0.39079 )
+      Py  (        0.98857       -4.31075        1.59094 )
+      Pz  (       -0.28654        1.34315       -1.25277 )
+           atom     66   O  
+      Px  (       -2.57974       -1.91940       -1.18240 )
+      Py  (       -2.00964       -2.69851       -1.13391 )
+      Pz  (       -1.01993       -0.91973       -1.25277 )
+           atom     67   O  
+      Px  (       -4.37014        0.97595        1.57319 )
+      Py  (        0.88571       -0.90811       -0.45703 )
+      Pz  (        1.30648       -0.42342       -1.25277 )
+           atom     68   O  
+      Px  (       -0.96749        1.07881       -0.39079 )
+      Py  (        0.98857       -4.31075        1.59094 )
+      Pz  (       -0.28654        1.34315       -1.25277 )
+           atom     69   O  
+      Px  (       -2.57974       -1.91940       -1.18240 )
+      Py  (       -2.00964       -2.69851       -1.13391 )
+      Pz  (       -1.01993       -0.91973       -1.25277 )
+           atom     70   O  
+      Px  (       -0.74238        0.09812       -0.00028 )
+      Py  (       -0.03196       -2.07552       -1.79600 )
+      Pz  (        0.02078       -1.55036       -2.76107 )
+           atom     71   O  
+      Px  (       -1.71359       -0.52876        1.55552 )
+      Py  (       -0.65885       -1.10431        0.89776 )
+      Pz  (        1.33226        0.79318       -2.76107 )
+           atom     72   O  
+      Px  (       -1.77088        0.62577       -1.55524 )
+      Py  (        0.49569       -1.04702        0.89824 )
+      Pz  (       -1.35304        0.75718       -2.76107 )
+           atom     73   O  
+      Px  (       -0.74238        0.09812       -0.00028 )
+      Py  (       -0.03196       -2.07552       -1.79600 )
+      Pz  (        0.02078       -1.55036       -2.76107 )
+           atom     74   O  
+      Px  (       -1.71359       -0.52876        1.55552 )
+      Py  (       -0.65885       -1.10431        0.89776 )
+      Pz  (        1.33226        0.79318       -2.76107 )
+           atom     75   O  
+      Px  (       -0.91734        0.19804        0.14538 )
+      Py  (        0.19579       -2.15459       -1.73027 )
+      Pz  (        0.18321       -1.44430       -2.54199 )
+           atom     76   O  
+      Px  (       -1.67474       -0.63308        1.42577 )
+      Py  (       -0.63533       -1.39718        0.99104 )
+      Pz  (        1.15920        0.88081       -2.54199 )
+           atom     77   O  
+      Px  (       -2.01581        0.43841       -1.57115 )
+      Py  (        0.43617       -1.05612        0.73923 )
+      Pz  (       -1.34240        0.56349       -2.54199 )
+           atom     78   O  
+      Px  (       -0.91734        0.19804        0.14538 )
+      Py  (        0.19579       -2.15459       -1.73027 )
+      Pz  (        0.18321       -1.44430       -2.54199 )
+           atom     79   O  
+      Px  (       -1.67474       -0.63308        1.42577 )
+      Py  (       -0.63533       -1.39718        0.99104 )
+      Pz  (        1.15920        0.88081       -2.54199 )
+           atom     80   O  
+      Px  (       -2.45587       -1.90363        1.14815 )
+      Py  (       -1.91003       -2.75851        1.14083 )
+      Pz  (        0.95520        0.92244       -1.24308 )
+           atom     81   O  
+      Px  (       -4.33421        0.82557       -1.56206 )
+      Py  (        0.81917       -0.88016        0.42391 )
+      Pz  (       -1.27646        0.36601       -1.24308 )
+           atom     82   O  
+      Px  (       -1.03148        1.08766        0.41391 )
+      Py  (        1.08126       -4.18290       -1.56474 )
+      Pz  (        0.32126       -1.28845       -1.24308 )
+           atom     83   O  
+      Px  (       -2.45587       -1.90363        1.14815 )
+      Py  (       -1.91003       -2.75851        1.14083 )
+      Pz  (        0.95520        0.92244       -1.24308 )
+           atom     84   O  
+      Px  (       -4.33421        0.82557       -1.56206 )
+      Py  (        0.81917       -0.88016        0.42391 )
+      Pz  (       -1.27646        0.36601       -1.24308 )
+           atom     85   O  
+      Px  (       -2.97256        1.36208        0.08273 )
+      Py  (        1.46607       -1.75098        0.04172 )
+      Pz  (        0.20801       -0.13884       -0.76941 )
+           atom     86   O  
+      Px  (       -0.83176       -0.23007       -0.07749 )
+      Py  (       -0.12608       -3.89179        0.05078 )
+      Pz  (        0.01624        0.24956       -0.76941 )
+           atom     87   O  
+      Px  (       -3.28100       -1.28799       -0.00523 )
+      Py  (       -1.18400       -1.44255       -0.09250 )
+      Pz  (       -0.22424       -0.11072       -0.76941 )
+           atom     88   O  
+      Px  (       -2.97256        1.36208        0.08273 )
+      Py  (        1.46607       -1.75098        0.04172 )
+      Pz  (        0.20801       -0.13884       -0.76941 )
+           atom     89   O  
+      Px  (       -0.83176       -0.23007       -0.07749 )
+      Py  (       -0.12608       -3.89179        0.05078 )
+      Pz  (        0.01624        0.24956       -0.76941 )
+           atom     90   O  
+      Px  (       -0.80234       -0.24472        0.00476 )
+      Py  (       -0.15951       -3.85644        0.15044 )
+      Pz  (       -0.09053       -0.05925       -0.75274 )
+           atom     91   O  
+      Px  (       -3.26795       -1.26401       -0.13267 )
+      Py  (       -1.17880       -1.39083       -0.07110 )
+      Pz  (        0.09658       -0.04877       -0.75274 )
+           atom     92   O  
+      Px  (       -2.91788        1.38092        0.12791 )
+      Py  (        1.46613       -1.74090       -0.07934 )
+      Pz  (       -0.00605        0.10802       -0.75274 )
+           atom     93   O  
+      Px  (       -0.80234       -0.24472        0.00476 )
+      Py  (       -0.15951       -3.85644        0.15044 )
+      Pz  (       -0.09053       -0.05925       -0.75274 )
+           atom     94   O  
+      Px  (       -3.26795       -1.26401       -0.13267 )
+      Py  (       -1.17880       -1.39083       -0.07110 )
+      Pz  (        0.09658       -0.04877       -0.75274 )
+           atom     95   O  
+      Px  (       -2.47406       -1.83647        1.06017 )
+      Py  (       -1.89929       -2.71555        0.97623 )
+      Pz  (        0.96281        0.79396       -1.21291 )
+           atom     96   O  
+      Px  (       -4.27280        0.86078       -1.37553 )
+      Py  (        0.79796       -0.91680        0.43002 )
+      Pz  (       -1.16899        0.43684       -1.21291 )
+           atom     97   O  
+      Px  (       -1.03754        1.06992        0.31536 )
+      Py  (        1.00710       -4.15206       -1.40625 )
+      Pz  (        0.20618       -1.23079       -1.21291 )
+           atom     98   O  
+      Px  (       -2.47406       -1.83647        1.06017 )
+      Py  (       -1.89929       -2.71555        0.97623 )
+      Pz  (        0.96281        0.79396       -1.21291 )
+           atom     99   O  
+      Px  (       -4.27280        0.86078       -1.37553 )
+      Py  (        0.79796       -0.91680        0.43002 )
+      Pz  (       -1.16899        0.43684       -1.21291 )
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.000000000   0.000000000   0.000000000 ) 
+
+ **************************************************************************
+     omega( 1) =      -0.837927 [THz] =     -27.950244 [cm-1]
+     omega( 2) =      -0.837927 [THz] =     -27.950244 [cm-1]
+     omega( 3) =      -0.572059 [THz] =     -19.081847 [cm-1]
+     omega( 4) =      -0.504594 [THz] =     -16.831451 [cm-1]
+     omega( 5) =       0.080894 [THz] =       2.698348 [cm-1]
+     omega( 6) =       0.919397 [THz] =      30.667773 [cm-1]
+     omega( 7) =       0.919397 [THz] =      30.667773 [cm-1]
+     omega( 8) =       1.002892 [THz] =      33.452875 [cm-1]
+     omega( 9) =       1.110717 [THz] =      37.049529 [cm-1]
+     omega(10) =       1.110717 [THz] =      37.049529 [cm-1]
+     omega(11) =       1.212106 [THz] =      40.431512 [cm-1]
+     omega(12) =       1.212106 [THz] =      40.431512 [cm-1]
+     omega(13) =       1.304398 [THz] =      43.510043 [cm-1]
+     omega(14) =       1.386836 [THz] =      46.259885 [cm-1]
+     omega(15) =       1.386836 [THz] =      46.259885 [cm-1]
+     omega(16) =       1.407605 [THz] =      46.952636 [cm-1]
+     omega(17) =       1.407605 [THz] =      46.952636 [cm-1]
+     omega(18) =       1.521567 [THz] =      50.753999 [cm-1]
+     omega(19) =       1.594569 [THz] =      53.189087 [cm-1]
+     omega(20) =       1.594569 [THz] =      53.189087 [cm-1]
+     omega(21) =       1.659782 [THz] =      55.364372 [cm-1]
+     omega(22) =       1.659782 [THz] =      55.364372 [cm-1]
+     omega(23) =       1.734018 [THz] =      57.840627 [cm-1]
+     omega(24) =       1.766777 [THz] =      58.933349 [cm-1]
+     omega(25) =       1.882608 [THz] =      62.797055 [cm-1]
+     omega(26) =       1.882608 [THz] =      62.797055 [cm-1]
+     omega(27) =       1.938773 [THz] =      64.670497 [cm-1]
+     omega(28) =       1.938773 [THz] =      64.670497 [cm-1]
+     omega(29) =       2.005454 [THz] =      66.894756 [cm-1]
+     omega(30) =       2.148117 [THz] =      71.653461 [cm-1]
+     omega(31) =       2.148117 [THz] =      71.653461 [cm-1]
+     omega(32) =       2.203277 [THz] =      73.493425 [cm-1]
+     omega(33) =       2.271371 [THz] =      75.764789 [cm-1]
+     omega(34) =       2.405886 [THz] =      80.251704 [cm-1]
+     omega(35) =       2.405886 [THz] =      80.251704 [cm-1]
+     omega(36) =       2.428228 [THz] =      80.996952 [cm-1]
+     omega(37) =       2.498048 [THz] =      83.325924 [cm-1]
+     omega(38) =       2.498048 [THz] =      83.325924 [cm-1]
+     omega(39) =       2.662722 [THz] =      88.818851 [cm-1]
+     omega(40) =       2.662722 [THz] =      88.818851 [cm-1]
+     omega(41) =       2.673844 [THz] =      89.189840 [cm-1]
+     omega(42) =       2.681801 [THz] =      89.455244 [cm-1]
+     omega(43) =       2.777772 [THz] =      92.656500 [cm-1]
+     omega(44) =       2.777772 [THz] =      92.656500 [cm-1]
+     omega(45) =       2.831359 [THz] =      94.443972 [cm-1]
+     omega(46) =       2.831359 [THz] =      94.443972 [cm-1]
+     omega(47) =       2.911236 [THz] =      97.108365 [cm-1]
+     omega(48) =       3.057848 [THz] =     101.998844 [cm-1]
+     omega(49) =       3.057848 [THz] =     101.998844 [cm-1]
+     omega(50) =       3.217549 [THz] =     107.325897 [cm-1]
+     omega(51) =       3.241503 [THz] =     108.124891 [cm-1]
+     omega(52) =       3.282937 [THz] =     109.507000 [cm-1]
+     omega(53) =       3.301114 [THz] =     110.113304 [cm-1]
+     omega(54) =       3.301114 [THz] =     110.113304 [cm-1]
+     omega(55) =       3.455320 [THz] =     115.257064 [cm-1]
+     omega(56) =       3.469492 [THz] =     115.729783 [cm-1]
+     omega(57) =       3.469492 [THz] =     115.729783 [cm-1]
+     omega(58) =       3.625320 [THz] =     120.927671 [cm-1]
+     omega(59) =       3.625320 [THz] =     120.927671 [cm-1]
+     omega(60) =       3.630449 [THz] =     121.098731 [cm-1]
+     omega(61) =       3.682043 [THz] =     122.819731 [cm-1]
+     omega(62) =       3.747552 [THz] =     125.004889 [cm-1]
+     omega(63) =       3.747552 [THz] =     125.004889 [cm-1]
+     omega(64) =       3.829914 [THz] =     127.752176 [cm-1]
+     omega(65) =       3.867570 [THz] =     129.008261 [cm-1]
+     omega(66) =       3.867570 [THz] =     129.008261 [cm-1]
+     omega(67) =       3.898484 [THz] =     130.039415 [cm-1]
+     omega(68) =       3.898484 [THz] =     130.039415 [cm-1]
+     omega(69) =       3.909401 [THz] =     130.403571 [cm-1]
+     omega(70) =       3.957541 [THz] =     132.009352 [cm-1]
+     omega(71) =       4.014204 [THz] =     133.899421 [cm-1]
+     omega(72) =       4.020398 [THz] =     134.106029 [cm-1]
+     omega(73) =       4.020398 [THz] =     134.106029 [cm-1]
+     omega(74) =       4.107762 [THz] =     137.020194 [cm-1]
+     omega(75) =       4.113870 [THz] =     137.223937 [cm-1]
+     omega(76) =       4.113870 [THz] =     137.223937 [cm-1]
+     omega(77) =       4.142838 [THz] =     138.190188 [cm-1]
+     omega(78) =       4.142838 [THz] =     138.190188 [cm-1]
+     omega(79) =       4.239686 [THz] =     141.420709 [cm-1]
+     omega(80) =       4.248717 [THz] =     141.721934 [cm-1]
+     omega(81) =       4.248717 [THz] =     141.721934 [cm-1]
+     omega(82) =       4.433693 [THz] =     147.892068 [cm-1]
+     omega(83) =       4.447741 [THz] =     148.360656 [cm-1]
+     omega(84) =       4.447741 [THz] =     148.360656 [cm-1]
+     omega(85) =       4.543712 [THz] =     151.561922 [cm-1]
+     omega(86) =       4.543712 [THz] =     151.561922 [cm-1]
+     omega(87) =       4.653507 [THz] =     155.224279 [cm-1]
+     omega(88) =       4.715465 [THz] =     157.290983 [cm-1]
+     omega(89) =       4.715465 [THz] =     157.290983 [cm-1]
+     omega(90) =       4.773976 [THz] =     159.242699 [cm-1]
+     omega(91) =       5.020985 [THz] =     167.482031 [cm-1]
+     omega(92) =       5.046345 [THz] =     168.327949 [cm-1]
+     omega(93) =       5.046345 [THz] =     168.327949 [cm-1]
+     omega(94) =       5.241654 [THz] =     174.842748 [cm-1]
+     omega(95) =       5.264590 [THz] =     175.607831 [cm-1]
+     omega(96) =       5.264590 [THz] =     175.607831 [cm-1]
+     omega(97) =       5.275404 [THz] =     175.968531 [cm-1]
+     omega(98) =       5.275404 [THz] =     175.968531 [cm-1]
+     omega(99) =       5.334976 [THz] =     177.955661 [cm-1]
+     omega(**) =       5.460121 [THz] =     182.130048 [cm-1]
+     omega(**) =       5.598835 [THz] =     186.757017 [cm-1]
+     omega(**) =       5.624251 [THz] =     187.604826 [cm-1]
+     omega(**) =       5.624251 [THz] =     187.604826 [cm-1]
+     omega(**) =       5.667989 [THz] =     189.063746 [cm-1]
+     omega(**) =       5.681479 [THz] =     189.513736 [cm-1]
+     omega(**) =       5.681479 [THz] =     189.513736 [cm-1]
+     omega(**) =       5.790267 [THz] =     193.142529 [cm-1]
+     omega(**) =       5.841484 [THz] =     194.850918 [cm-1]
+     omega(**) =       5.841484 [THz] =     194.850918 [cm-1]
+     omega(**) =       5.916369 [THz] =     197.348844 [cm-1]
+     omega(**) =       5.916369 [THz] =     197.348844 [cm-1]
+     omega(**) =       5.965201 [THz] =     198.977686 [cm-1]
+     omega(**) =       5.965201 [THz] =     198.977686 [cm-1]
+     omega(**) =       6.150869 [THz] =     205.170906 [cm-1]
+     omega(**) =       6.218523 [THz] =     207.427615 [cm-1]
+     omega(**) =       6.218523 [THz] =     207.427615 [cm-1]
+     omega(**) =       6.294581 [THz] =     209.964612 [cm-1]
+     omega(**) =       6.467872 [THz] =     215.744975 [cm-1]
+     omega(**) =       6.467872 [THz] =     215.744975 [cm-1]
+     omega(**) =       6.657216 [THz] =     222.060835 [cm-1]
+     omega(**) =       6.657216 [THz] =     222.060835 [cm-1]
+     omega(**) =       6.845720 [THz] =     228.348627 [cm-1]
+     omega(**) =       6.845720 [THz] =     228.348627 [cm-1]
+     omega(**) =       6.846407 [THz] =     228.371548 [cm-1]
+     omega(**) =       6.867707 [THz] =     229.082032 [cm-1]
+     omega(**) =       7.018776 [THz] =     234.121163 [cm-1]
+     omega(**) =       7.018776 [THz] =     234.121163 [cm-1]
+     omega(**) =       7.210023 [THz] =     240.500466 [cm-1]
+     omega(**) =       7.382254 [THz] =     246.245481 [cm-1]
+     omega(**) =       7.456372 [THz] =     248.717792 [cm-1]
+     omega(**) =       7.456372 [THz] =     248.717792 [cm-1]
+     omega(**) =       7.554551 [THz] =     251.992690 [cm-1]
+     omega(**) =       7.554551 [THz] =     251.992690 [cm-1]
+     omega(**) =       7.559550 [THz] =     252.159445 [cm-1]
+     omega(**) =       7.822799 [THz] =     260.940480 [cm-1]
+     omega(**) =       8.147196 [THz] =     271.761216 [cm-1]
+     omega(**) =       8.168124 [THz] =     272.459297 [cm-1]
+     omega(**) =       8.281778 [THz] =     276.250375 [cm-1]
+     omega(**) =       8.281778 [THz] =     276.250375 [cm-1]
+     omega(**) =       8.335029 [THz] =     278.026657 [cm-1]
+     omega(**) =       8.339391 [THz] =     278.172129 [cm-1]
+     omega(**) =       8.339391 [THz] =     278.172129 [cm-1]
+     omega(**) =       8.539035 [THz] =     284.831537 [cm-1]
+     omega(**) =       8.539035 [THz] =     284.831537 [cm-1]
+     omega(**) =       8.562705 [THz] =     285.621107 [cm-1]
+     omega(**) =       8.562705 [THz] =     285.621107 [cm-1]
+     omega(**) =       8.583742 [THz] =     286.322807 [cm-1]
+     omega(**) =       8.621274 [THz] =     287.574753 [cm-1]
+     omega(**) =       8.621274 [THz] =     287.574753 [cm-1]
+     omega(**) =       8.760098 [THz] =     292.205418 [cm-1]
+     omega(**) =       8.761537 [THz] =     292.253421 [cm-1]
+     omega(**) =       8.761537 [THz] =     292.253421 [cm-1]
+     omega(**) =       8.770830 [THz] =     292.563403 [cm-1]
+     omega(**) =       8.889622 [THz] =     296.525858 [cm-1]
+     omega(**) =       8.889622 [THz] =     296.525858 [cm-1]
+     omega(**) =       8.985560 [THz] =     299.726034 [cm-1]
+     omega(**) =       8.985560 [THz] =     299.726034 [cm-1]
+     omega(**) =       8.988019 [THz] =     299.808027 [cm-1]
+     omega(**) =       9.055032 [THz] =     302.043355 [cm-1]
+     omega(**) =       9.071415 [THz] =     302.589849 [cm-1]
+     omega(**) =       9.071415 [THz] =     302.589849 [cm-1]
+     omega(**) =       9.090438 [THz] =     303.224386 [cm-1]
+     omega(**) =       9.228161 [THz] =     307.818328 [cm-1]
+     omega(**) =       9.259780 [THz] =     308.872999 [cm-1]
+     omega(**) =       9.275867 [THz] =     309.409622 [cm-1]
+     omega(**) =       9.275867 [THz] =     309.409622 [cm-1]
+     omega(**) =       9.335911 [THz] =     311.412482 [cm-1]
+     omega(**) =       9.338228 [THz] =     311.489772 [cm-1]
+     omega(**) =       9.338228 [THz] =     311.489772 [cm-1]
+     omega(**) =       9.444694 [THz] =     315.041078 [cm-1]
+     omega(**) =       9.444694 [THz] =     315.041078 [cm-1]
+     omega(**) =       9.521029 [THz] =     317.587350 [cm-1]
+     omega(**) =       9.524959 [THz] =     317.718417 [cm-1]
+     omega(**) =       9.524959 [THz] =     317.718417 [cm-1]
+     omega(**) =       9.601409 [THz] =     320.268532 [cm-1]
+     omega(**) =       9.619480 [THz] =     320.871316 [cm-1]
+     omega(**) =       9.619480 [THz] =     320.871316 [cm-1]
+     omega(**) =       9.631940 [THz] =     321.286940 [cm-1]
+     omega(**) =       9.631940 [THz] =     321.286940 [cm-1]
+     omega(**) =       9.726268 [THz] =     324.433369 [cm-1]
+     omega(**) =       9.747556 [THz] =     325.143466 [cm-1]
+     omega(**) =       9.747556 [THz] =     325.143466 [cm-1]
+     omega(**) =       9.763135 [THz] =     325.663129 [cm-1]
+     omega(**) =       9.807188 [THz] =     327.132564 [cm-1]
+     omega(**) =       9.813632 [THz] =     327.347512 [cm-1]
+     omega(**) =       9.813632 [THz] =     327.347512 [cm-1]
+     omega(**) =       9.933877 [THz] =     331.358460 [cm-1]
+     omega(**) =       9.933877 [THz] =     331.358460 [cm-1]
+     omega(**) =       9.940972 [THz] =     331.595119 [cm-1]
+     omega(**) =       9.940972 [THz] =     331.595119 [cm-1]
+     omega(**) =       9.941539 [THz] =     331.614034 [cm-1]
+     omega(**) =      10.066509 [THz] =     335.782593 [cm-1]
+     omega(**) =      10.075848 [THz] =     336.094104 [cm-1]
+     omega(**) =      10.075848 [THz] =     336.094104 [cm-1]
+     omega(**) =      10.108262 [THz] =     337.175330 [cm-1]
+     omega(**) =      10.179793 [THz] =     339.561359 [cm-1]
+     omega(**) =      10.184743 [THz] =     339.726465 [cm-1]
+     omega(**) =      10.184743 [THz] =     339.726465 [cm-1]
+     omega(**) =      10.225268 [THz] =     341.078218 [cm-1]
+     omega(**) =      10.313444 [THz] =     344.019471 [cm-1]
+     omega(**) =      10.313444 [THz] =     344.019471 [cm-1]
+     omega(**) =      10.465030 [THz] =     349.075814 [cm-1]
+     omega(**) =      10.465030 [THz] =     349.075814 [cm-1]
+     omega(**) =      10.474161 [THz] =     349.380390 [cm-1]
+     omega(**) =      10.542305 [THz] =     351.653458 [cm-1]
+     omega(**) =      10.542305 [THz] =     351.653458 [cm-1]
+     omega(**) =      10.585820 [THz] =     353.104940 [cm-1]
+     omega(**) =      10.675315 [THz] =     356.090167 [cm-1]
+     omega(**) =      10.675315 [THz] =     356.090167 [cm-1]
+     omega(**) =      10.715649 [THz] =     357.435568 [cm-1]
+     omega(**) =      10.774171 [THz] =     359.387654 [cm-1]
+     omega(**) =      10.774171 [THz] =     359.387654 [cm-1]
+     omega(**) =      10.881724 [THz] =     362.975247 [cm-1]
+     omega(**) =      10.881724 [THz] =     362.975247 [cm-1]
+     omega(**) =      10.899952 [THz] =     363.583250 [cm-1]
+     omega(**) =      10.899952 [THz] =     363.583250 [cm-1]
+     omega(**) =      10.907989 [THz] =     363.851345 [cm-1]
+     omega(**) =      10.945653 [THz] =     365.107695 [cm-1]
+     omega(**) =      11.093918 [THz] =     370.053282 [cm-1]
+     omega(**) =      11.093918 [THz] =     370.053282 [cm-1]
+     omega(**) =      11.110937 [THz] =     370.620954 [cm-1]
+     omega(**) =      11.110937 [THz] =     370.620954 [cm-1]
+     omega(**) =      11.355726 [THz] =     378.786259 [cm-1]
+     omega(**) =      11.783275 [THz] =     393.047732 [cm-1]
+     omega(**) =      11.807293 [THz] =     393.848905 [cm-1]
+     omega(**) =      23.118401 [THz] =     771.146857 [cm-1]
+     omega(**) =      23.118401 [THz] =     771.146857 [cm-1]
+     omega(**) =      23.209249 [THz] =     774.177200 [cm-1]
+     omega(**) =      23.209249 [THz] =     774.177200 [cm-1]
+     omega(**) =      23.270422 [THz] =     776.217736 [cm-1]
+     omega(**) =      23.270422 [THz] =     776.217736 [cm-1]
+     omega(**) =      23.408348 [THz] =     780.818438 [cm-1]
+     omega(**) =      23.408348 [THz] =     780.818438 [cm-1]
+     omega(**) =      23.444056 [THz] =     782.009541 [cm-1]
+     omega(**) =      23.556495 [THz] =     785.760079 [cm-1]
+     omega(**) =      23.586433 [THz] =     786.758709 [cm-1]
+     omega(**) =      23.760522 [THz] =     792.565717 [cm-1]
+     omega(**) =      23.760522 [THz] =     792.565717 [cm-1]
+     omega(**) =      23.778340 [THz] =     793.160061 [cm-1]
+     omega(**) =      23.778340 [THz] =     793.160061 [cm-1]
+     omega(**) =      24.336478 [THz] =     811.777522 [cm-1]
+     omega(**) =      24.533191 [THz] =     818.339163 [cm-1]
+     omega(**) =      24.533191 [THz] =     818.339163 [cm-1]
+     omega(**) =      24.560364 [THz] =     819.245554 [cm-1]
+     omega(**) =      24.623745 [THz] =     821.359729 [cm-1]
+     omega(**) =      24.667071 [THz] =     822.804911 [cm-1]
+     omega(**) =      24.667071 [THz] =     822.804911 [cm-1]
+     omega(**) =      24.760194 [THz] =     825.911181 [cm-1]
+     omega(**) =      24.773326 [THz] =     826.349214 [cm-1]
+     omega(**) =      24.773326 [THz] =     826.349214 [cm-1]
+     omega(**) =      24.832479 [THz] =     828.322327 [cm-1]
+     omega(**) =      24.837266 [THz] =     828.482030 [cm-1]
+     omega(**) =      24.837266 [THz] =     828.482030 [cm-1]
+     omega(**) =      24.858419 [THz] =     829.187596 [cm-1]
+     omega(**) =      25.084978 [THz] =     836.744784 [cm-1]
+     omega(**) =      25.084978 [THz] =     836.744784 [cm-1]
+     omega(**) =      25.086499 [THz] =     836.795528 [cm-1]
+     omega(**) =      25.181218 [THz] =     839.955019 [cm-1]
+     omega(**) =      25.181218 [THz] =     839.955019 [cm-1]
+     omega(**) =      25.232785 [THz] =     841.675121 [cm-1]
+     omega(**) =      25.232785 [THz] =     841.675121 [cm-1]
+     omega(**) =      25.276144 [THz] =     843.121396 [cm-1]
+     omega(**) =      25.276144 [THz] =     843.121396 [cm-1]
+     omega(**) =      25.285840 [THz] =     843.444831 [cm-1]
+     omega(**) =      25.359787 [THz] =     845.911427 [cm-1]
+     omega(**) =      25.613483 [THz] =     854.373838 [cm-1]
+     omega(**) =      25.613483 [THz] =     854.373838 [cm-1]
+     omega(**) =      25.626632 [THz] =     854.812437 [cm-1]
+     omega(**) =      25.626632 [THz] =     854.812437 [cm-1]
+     omega(**) =      25.907249 [THz] =     864.172809 [cm-1]
+     omega(**) =      25.911763 [THz] =     864.323370 [cm-1]
+     omega(**) =      28.000395 [THz] =     933.992658 [cm-1]
+     omega(**) =      28.000395 [THz] =     933.992658 [cm-1]
+     omega(**) =      28.029619 [THz] =     934.967445 [cm-1]
+     omega(**) =      28.096612 [THz] =     937.202104 [cm-1]
+     omega(**) =      28.096612 [THz] =     937.202104 [cm-1]
+     omega(**) =      28.118255 [THz] =     937.924033 [cm-1]
+     omega(**) =      28.118255 [THz] =     937.924033 [cm-1]
+     omega(**) =      28.180226 [THz] =     939.991159 [cm-1]
+     omega(**) =      28.187369 [THz] =     940.229435 [cm-1]
+     omega(**) =      28.227046 [THz] =     941.552904 [cm-1]
+     omega(**) =      28.227046 [THz] =     941.552904 [cm-1]
+     omega(**) =      28.327984 [THz] =     944.919851 [cm-1]
+     omega(**) =      28.327984 [THz] =     944.919851 [cm-1]
+     omega(**) =      28.338152 [THz] =     945.258998 [cm-1]
+     omega(**) =      28.429600 [THz] =     948.309380 [cm-1]
+     omega(**) =      28.455988 [THz] =     949.189587 [cm-1]
+     omega(**) =      28.455988 [THz] =     949.189587 [cm-1]
+     omega(**) =      28.708949 [THz] =     957.627463 [cm-1]
+     omega(**) =      28.729110 [THz] =     958.299952 [cm-1]
+     omega(**) =      28.907757 [THz] =     964.258968 [cm-1]
+     omega(**) =      29.004391 [THz] =     967.482331 [cm-1]
+     omega(**) =      29.067278 [THz] =     969.580020 [cm-1]
+     omega(**) =      29.067278 [THz] =     969.580020 [cm-1]
+     omega(**) =      29.099433 [THz] =     970.652605 [cm-1]
+     omega(**) =      29.099433 [THz] =     970.652605 [cm-1]
+     omega(**) =      29.237717 [THz] =     975.265260 [cm-1]
+ **************************************************************************
+
+     Mode symmetry, S_6 (-3)    point group:
+
+     omega(  1 -  2) =        -28.0  [cm-1]   --> E_u             I  
+     omega(  1 -  2) =        -28.0  [cm-1]   --> E_u*            I  
+     omega(  3 -  3) =        -19.1  [cm-1]   --> A_g             R  
+     omega(  4 -  4) =        -16.8  [cm-1]   --> A_u             I  
+     omega(  5 -  5) =          2.7  [cm-1]   --> A_u             I  
+     omega(  6 -  7) =         30.7  [cm-1]   --> E_g             R  
+     omega(  6 -  7) =         30.7  [cm-1]   --> E_g*            R  
+     omega(  8 -  8) =         33.5  [cm-1]   --> A_u             I  
+     omega(  9 - 10) =         37.0  [cm-1]   --> E_u             I  
+     omega(  9 - 10) =         37.0  [cm-1]   --> E_u*            I  
+     omega( 11 - 12) =         40.4  [cm-1]   --> E_g             R  
+     omega( 11 - 12) =         40.4  [cm-1]   --> E_g*            R  
+     omega( 13 - 13) =         43.5  [cm-1]   --> A_u             I  
+     omega( 14 - 15) =         46.3  [cm-1]   --> E_u             I  
+     omega( 14 - 15) =         46.3  [cm-1]   --> E_u*            I  
+     omega( 16 - 17) =         47.0  [cm-1]   --> E_g             R  
+     omega( 16 - 17) =         47.0  [cm-1]   --> E_g*            R  
+     omega( 18 - 18) =         50.8  [cm-1]   --> A_g             R  
+     omega( 19 - 20) =         53.2  [cm-1]   --> E_u             I  
+     omega( 19 - 20) =         53.2  [cm-1]   --> E_u*            I  
+     omega( 21 - 22) =         55.4  [cm-1]   --> E_g             R  
+     omega( 21 - 22) =         55.4  [cm-1]   --> E_g*            R  
+     omega( 23 - 23) =         57.8  [cm-1]   --> A_u             I  
+     omega( 24 - 24) =         58.9  [cm-1]   --> A_g             R  
+     omega( 25 - 26) =         62.8  [cm-1]   --> E_g             R  
+     omega( 25 - 26) =         62.8  [cm-1]   --> E_g*            R  
+     omega( 27 - 28) =         64.7  [cm-1]   --> E_u             I  
+     omega( 27 - 28) =         64.7  [cm-1]   --> E_u*            I  
+     omega( 29 - 29) =         66.9  [cm-1]   --> A_g             R  
+     omega( 30 - 31) =         71.7  [cm-1]   --> E_u             I  
+     omega( 30 - 31) =         71.7  [cm-1]   --> E_u*            I  
+     omega( 32 - 32) =         73.5  [cm-1]   --> A_u             I  
+     omega( 33 - 33) =         75.8  [cm-1]   --> A_g             R  
+     omega( 34 - 35) =         80.3  [cm-1]   --> E_g             R  
+     omega( 34 - 35) =         80.3  [cm-1]   --> E_g*            R  
+     omega( 36 - 36) =         81.0  [cm-1]   --> A_u             I  
+     omega( 37 - 38) =         83.3  [cm-1]   --> E_u             I  
+     omega( 37 - 38) =         83.3  [cm-1]   --> E_u*            I  
+     omega( 39 - 40) =         88.8  [cm-1]   --> E_g             R  
+     omega( 39 - 40) =         88.8  [cm-1]   --> E_g*            R  
+     omega( 41 - 41) =         89.2  [cm-1]   --> A_u             I  
+     omega( 42 - 42) =         89.5  [cm-1]   --> A_g             R  
+     omega( 43 - 44) =         92.7  [cm-1]   --> E_u             I  
+     omega( 43 - 44) =         92.7  [cm-1]   --> E_u*            I  
+     omega( 45 - 46) =         94.4  [cm-1]   --> E_g             R  
+     omega( 45 - 46) =         94.4  [cm-1]   --> E_g*            R  
+     omega( 47 - 47) =         97.1  [cm-1]   --> A_g             R  
+     omega( 48 - 49) =        102.0  [cm-1]   --> E_u             I  
+     omega( 48 - 49) =        102.0  [cm-1]   --> E_u*            I  
+     omega( 50 - 50) =        107.3  [cm-1]   --> A_u             I  
+     omega( 51 - 51) =        108.1  [cm-1]   --> A_u             I  
+     omega( 52 - 52) =        109.5  [cm-1]   --> A_g             R  
+     omega( 53 - 54) =        110.1  [cm-1]   --> E_u             I  
+     omega( 53 - 54) =        110.1  [cm-1]   --> E_u*            I  
+     omega( 55 - 55) =        115.3  [cm-1]   --> A_g             R  
+     omega( 56 - 57) =        115.7  [cm-1]   --> E_g             R  
+     omega( 56 - 57) =        115.7  [cm-1]   --> E_g*            R  
+     omega( 58 - 59) =        120.9  [cm-1]   --> E_g             R  
+     omega( 58 - 59) =        120.9  [cm-1]   --> E_g*            R  
+     omega( 60 - 60) =        121.1  [cm-1]   --> A_g             R  
+     omega( 61 - 61) =        122.8  [cm-1]   --> A_u             I  
+     omega( 62 - 63) =        125.0  [cm-1]   --> E_u             I  
+     omega( 62 - 63) =        125.0  [cm-1]   --> E_u*            I  
+     omega( 64 - 64) =        127.8  [cm-1]   --> A_g             R  
+     omega( 65 - 66) =        129.0  [cm-1]   --> E_g             R  
+     omega( 65 - 66) =        129.0  [cm-1]   --> E_g*            R  
+     omega( 67 - 68) =        130.0  [cm-1]   --> E_u             I  
+     omega( 67 - 68) =        130.0  [cm-1]   --> E_u*            I  
+     omega( 69 - 69) =        130.4  [cm-1]   --> A_u             I  
+     omega( 70 - 70) =        132.0  [cm-1]   --> A_g             R  
+     omega( 71 - 71) =        133.9  [cm-1]   --> A_u             I  
+     omega( 72 - 73) =        134.1  [cm-1]   --> E_g             R  
+     omega( 72 - 73) =        134.1  [cm-1]   --> E_g*            R  
+     omega( 74 - 74) =        137.0  [cm-1]   --> A_u             I  
+     omega( 75 - 76) =        137.2  [cm-1]   --> E_u             I  
+     omega( 75 - 76) =        137.2  [cm-1]   --> E_u*            I  
+     omega( 77 - 78) =        138.2  [cm-1]   --> E_g             R  
+     omega( 77 - 78) =        138.2  [cm-1]   --> E_g*            R  
+     omega( 79 - 79) =        141.4  [cm-1]   --> A_g             R  
+     omega( 80 - 81) =        141.7  [cm-1]   --> E_u             I  
+     omega( 80 - 81) =        141.7  [cm-1]   --> E_u*            I  
+     omega( 82 - 82) =        147.9  [cm-1]   --> A_u             I  
+     omega( 83 - 84) =        148.4  [cm-1]   --> E_g             R  
+     omega( 83 - 84) =        148.4  [cm-1]   --> E_g*            R  
+     omega( 85 - 86) =        151.6  [cm-1]   --> E_u             I  
+     omega( 85 - 86) =        151.6  [cm-1]   --> E_u*            I  
+     omega( 87 - 87) =        155.2  [cm-1]   --> A_g             R  
+     omega( 88 - 89) =        157.3  [cm-1]   --> E_g             R  
+     omega( 88 - 89) =        157.3  [cm-1]   --> E_g*            R  
+     omega( 90 - 90) =        159.2  [cm-1]   --> A_g             R  
+     omega( 91 - 91) =        167.5  [cm-1]   --> A_u             I  
+     omega( 92 - 93) =        168.3  [cm-1]   --> E_u             I  
+     omega( 92 - 93) =        168.3  [cm-1]   --> E_u*            I  
+     omega( 94 - 94) =        174.8  [cm-1]   --> A_g             R  
+     omega( 95 - 96) =        175.6  [cm-1]   --> E_u             I  
+     omega( 95 - 96) =        175.6  [cm-1]   --> E_u*            I  
+     omega( 97 - 98) =        176.0  [cm-1]   --> E_g             R  
+     omega( 97 - 98) =        176.0  [cm-1]   --> E_g*            R  
+     omega( 99 - 99) =        178.0  [cm-1]   --> A_u             I  
+     omega(100 -100) =        182.1  [cm-1]   --> A_g             R  
+     omega(101 -101) =        186.8  [cm-1]   --> A_u             I  
+     omega(102 -103) =        187.6  [cm-1]   --> E_g             R  
+     omega(102 -103) =        187.6  [cm-1]   --> E_g*            R  
+     omega(104 -104) =        189.1  [cm-1]   --> A_u             I  
+     omega(105 -106) =        189.5  [cm-1]   --> E_u             I  
+     omega(105 -106) =        189.5  [cm-1]   --> E_u*            I  
+     omega(107 -107) =        193.1  [cm-1]   --> A_g             R  
+     omega(108 -109) =        194.9  [cm-1]   --> E_g             R  
+     omega(108 -109) =        194.9  [cm-1]   --> E_g*            R  
+     omega(110 -111) =        197.3  [cm-1]   --> E_g             R  
+     omega(110 -111) =        197.3  [cm-1]   --> E_g*            R  
+     omega(112 -113) =        199.0  [cm-1]   --> E_u             I  
+     omega(112 -113) =        199.0  [cm-1]   --> E_u*            I  
+     omega(114 -114) =        205.2  [cm-1]   --> A_g             R  
+     omega(115 -116) =        207.4  [cm-1]   --> E_u             I  
+     omega(115 -116) =        207.4  [cm-1]   --> E_u*            I  
+     omega(117 -117) =        210.0  [cm-1]   --> A_u             I  
+     omega(118 -119) =        215.7  [cm-1]   --> E_u             I  
+     omega(118 -119) =        215.7  [cm-1]   --> E_u*            I  
+     omega(120 -121) =        222.1  [cm-1]   --> E_g             R  
+     omega(120 -121) =        222.1  [cm-1]   --> E_g*            R  
+     omega(122 -124) =        228.3  [cm-1]   --> A_g             R  
+     omega(122 -124) =        228.3  [cm-1]   --> E_g             R  
+     omega(122 -124) =        228.3  [cm-1]   --> E_g*            R  
+     omega(125 -125) =        229.1  [cm-1]   --> A_u             I  
+     omega(126 -127) =        234.1  [cm-1]   --> E_u             I  
+     omega(126 -127) =        234.1  [cm-1]   --> E_u*            I  
+     omega(128 -128) =        240.5  [cm-1]   --> A_u             I  
+     omega(129 -129) =        246.2  [cm-1]   --> A_g             R  
+     omega(130 -131) =        248.7  [cm-1]   --> E_g             R  
+     omega(130 -131) =        248.7  [cm-1]   --> E_g*            R  
+     omega(132 -133) =        252.0  [cm-1]   --> E_u             I  
+     omega(132 -133) =        252.0  [cm-1]   --> E_u*            I  
+     omega(134 -134) =        252.2  [cm-1]   --> A_g             R  
+     omega(135 -135) =        260.9  [cm-1]   --> A_u             I  
+     omega(136 -136) =        271.8  [cm-1]   --> A_g             R  
+     omega(137 -137) =        272.5  [cm-1]   --> A_u             I  
+     omega(138 -139) =        276.3  [cm-1]   --> E_g             R  
+     omega(138 -139) =        276.3  [cm-1]   --> E_g*            R  
+     omega(140 -140) =        278.0  [cm-1]   --> A_u             I  
+     omega(141 -142) =        278.2  [cm-1]   --> E_u             I  
+     omega(141 -142) =        278.2  [cm-1]   --> E_u*            I  
+     omega(143 -144) =        284.8  [cm-1]   --> E_u             I  
+     omega(143 -144) =        284.8  [cm-1]   --> E_u*            I  
+     omega(145 -146) =        285.6  [cm-1]   --> E_g             R  
+     omega(145 -146) =        285.6  [cm-1]   --> E_g*            R  
+     omega(147 -147) =        286.3  [cm-1]   --> A_g             R  
+     omega(148 -149) =        287.6  [cm-1]   --> E_u             I  
+     omega(148 -149) =        287.6  [cm-1]   --> E_u*            I  
+     omega(150 -152) =        292.2  [cm-1]   --> A_g             R  
+     omega(150 -152) =        292.2  [cm-1]   --> E_u             I  
+     omega(150 -152) =        292.2  [cm-1]   --> E_u*            I  
+     omega(153 -153) =        292.6  [cm-1]   --> A_u             I  
+     omega(154 -155) =        296.5  [cm-1]   --> E_g             R  
+     omega(154 -155) =        296.5  [cm-1]   --> E_g*            R  
+     omega(156 -157) =        299.7  [cm-1]   --> E_g             R  
+     omega(156 -157) =        299.7  [cm-1]   --> E_g*            R  
+     omega(158 -158) =        299.8  [cm-1]   --> A_g             R  
+     omega(159 -159) =        302.0  [cm-1]   --> A_u             I  
+     omega(160 -161) =        302.6  [cm-1]   --> E_u             I  
+     omega(160 -161) =        302.6  [cm-1]   --> E_u*            I  
+     omega(162 -162) =        303.2  [cm-1]   --> A_u             I  
+     omega(163 -163) =        307.8  [cm-1]   --> A_u             I  
+     omega(164 -164) =        308.9  [cm-1]   --> A_g             R  
+     omega(165 -166) =        309.4  [cm-1]   --> E_u             I  
+     omega(165 -166) =        309.4  [cm-1]   --> E_u*            I  
+     omega(167 -167) =        311.4  [cm-1]   --> A_g             R  
+     omega(168 -169) =        311.5  [cm-1]   --> E_g             R  
+     omega(168 -169) =        311.5  [cm-1]   --> E_g*            R  
+     omega(170 -171) =        315.0  [cm-1]   --> E_g             R  
+     omega(170 -171) =        315.0  [cm-1]   --> E_g*            R  
+     omega(172 -172) =        317.6  [cm-1]   --> A_u             I  
+     omega(173 -174) =        317.7  [cm-1]   --> E_u             I  
+     omega(173 -174) =        317.7  [cm-1]   --> E_u*            I  
+     omega(175 -175) =        320.3  [cm-1]   --> A_g             R  
+     omega(176 -177) =        320.9  [cm-1]   --> E_g             R  
+     omega(176 -177) =        320.9  [cm-1]   --> E_g*            R  
+     omega(178 -179) =        321.3  [cm-1]   --> E_u             I  
+     omega(178 -179) =        321.3  [cm-1]   --> E_u*            I  
+     omega(180 -180) =        324.4  [cm-1]   --> A_g             R  
+     omega(181 -182) =        325.1  [cm-1]   --> E_g             R  
+     omega(181 -182) =        325.1  [cm-1]   --> E_g*            R  
+     omega(183 -183) =        325.7  [cm-1]   --> A_u             I  
+     omega(184 -184) =        327.1  [cm-1]   --> A_g             R  
+     omega(185 -186) =        327.3  [cm-1]   --> E_u             I  
+     omega(185 -186) =        327.3  [cm-1]   --> E_u*            I  
+     omega(187 -188) =        331.4  [cm-1]   --> E_u             I  
+     omega(187 -188) =        331.4  [cm-1]   --> E_u*            I  
+     omega(189 -191) =        331.6  [cm-1]   --> E_g             R  
+     omega(189 -191) =        331.6  [cm-1]   --> E_g*            R  
+     omega(189 -191) =        331.6  [cm-1]   --> A_u             I  
+     omega(192 -192) =        335.8  [cm-1]   --> A_g             R  
+     omega(193 -194) =        336.1  [cm-1]   --> E_g             R  
+     omega(193 -194) =        336.1  [cm-1]   --> E_g*            R  
+     omega(195 -195) =        337.2  [cm-1]   --> A_u             I  
+     omega(196 -196) =        339.6  [cm-1]   --> A_g             R  
+     omega(197 -198) =        339.7  [cm-1]   --> E_u             I  
+     omega(197 -198) =        339.7  [cm-1]   --> E_u*            I  
+     omega(199 -199) =        341.1  [cm-1]   --> A_u             I  
+     omega(200 -201) =        344.0  [cm-1]   --> E_g             R  
+     omega(200 -201) =        344.0  [cm-1]   --> E_g*            R  
+     omega(202 -203) =        349.1  [cm-1]   --> E_u             I  
+     omega(202 -203) =        349.1  [cm-1]   --> E_u*            I  
+     omega(204 -204) =        349.4  [cm-1]   --> A_u             I  
+     omega(205 -206) =        351.7  [cm-1]   --> E_g             R  
+     omega(205 -206) =        351.7  [cm-1]   --> E_g*            R  
+     omega(207 -207) =        353.1  [cm-1]   --> A_g             R  
+     omega(208 -209) =        356.1  [cm-1]   --> E_g             R  
+     omega(208 -209) =        356.1  [cm-1]   --> E_g*            R  
+     omega(210 -210) =        357.4  [cm-1]   --> A_u             I  
+     omega(211 -212) =        359.4  [cm-1]   --> E_u             I  
+     omega(211 -212) =        359.4  [cm-1]   --> E_u*            I  
+     omega(213 -214) =        363.0  [cm-1]   --> E_u             I  
+     omega(213 -214) =        363.0  [cm-1]   --> E_u*            I  
+     omega(215 -216) =        363.6  [cm-1]   --> E_g             R  
+     omega(215 -216) =        363.6  [cm-1]   --> E_g*            R  
+     omega(217 -217) =        363.9  [cm-1]   --> A_g             R  
+     omega(218 -218) =        365.1  [cm-1]   --> A_u             I  
+     omega(219 -220) =        370.1  [cm-1]   --> E_u             I  
+     omega(219 -220) =        370.1  [cm-1]   --> E_u*            I  
+     omega(221 -222) =        370.6  [cm-1]   --> E_g             R  
+     omega(221 -222) =        370.6  [cm-1]   --> E_g*            R  
+     omega(223 -223) =        378.8  [cm-1]   --> A_g             R  
+     omega(224 -224) =        393.0  [cm-1]   --> A_u             I  
+     omega(225 -225) =        393.8  [cm-1]   --> A_g             R  
+     omega(226 -227) =        771.1  [cm-1]   --> E_u             I  
+     omega(226 -227) =        771.1  [cm-1]   --> E_u*            I  
+     omega(228 -229) =        774.2  [cm-1]   --> E_g             R  
+     omega(228 -229) =        774.2  [cm-1]   --> E_g*            R  
+     omega(230 -231) =        776.2  [cm-1]   --> E_u             I  
+     omega(230 -231) =        776.2  [cm-1]   --> E_u*            I  
+     omega(232 -233) =        780.8  [cm-1]   --> E_g             R  
+     omega(232 -233) =        780.8  [cm-1]   --> E_g*            R  
+     omega(234 -234) =        782.0  [cm-1]   --> A_u             I  
+     omega(235 -235) =        785.8  [cm-1]   --> A_u             I  
+     omega(236 -236) =        786.8  [cm-1]   --> A_g             R  
+     omega(237 -238) =        792.6  [cm-1]   --> E_u             I  
+     omega(237 -238) =        792.6  [cm-1]   --> E_u*            I  
+     omega(239 -240) =        793.2  [cm-1]   --> E_g             R  
+     omega(239 -240) =        793.2  [cm-1]   --> E_g*            R  
+     omega(241 -241) =        811.8  [cm-1]   --> A_g             R  
+     omega(242 -243) =        818.3  [cm-1]   --> E_g             R  
+     omega(242 -243) =        818.3  [cm-1]   --> E_g*            R  
+     omega(244 -244) =        819.2  [cm-1]   --> A_u             I  
+     omega(245 -245) =        821.4  [cm-1]   --> A_g             R  
+     omega(246 -247) =        822.8  [cm-1]   --> E_u             I  
+     omega(246 -247) =        822.8  [cm-1]   --> E_u*            I  
+     omega(248 -248) =        825.9  [cm-1]   --> A_u             I  
+     omega(249 -250) =        826.3  [cm-1]   --> E_g             R  
+     omega(249 -250) =        826.3  [cm-1]   --> E_g*            R  
+     omega(251 -251) =        828.3  [cm-1]   --> A_g             R  
+     omega(252 -253) =        828.5  [cm-1]   --> E_u             I  
+     omega(252 -253) =        828.5  [cm-1]   --> E_u*            I  
+     omega(254 -254) =        829.2  [cm-1]   --> A_u             I  
+     omega(255 -256) =        836.7  [cm-1]   --> E_u             I  
+     omega(255 -256) =        836.7  [cm-1]   --> E_u*            I  
+     omega(257 -257) =        836.8  [cm-1]   --> A_g             R  
+     omega(258 -259) =        840.0  [cm-1]   --> E_g             R  
+     omega(258 -259) =        840.0  [cm-1]   --> E_g*            R  
+     omega(260 -261) =        841.7  [cm-1]   --> E_u             I  
+     omega(260 -261) =        841.7  [cm-1]   --> E_u*            I  
+     omega(262 -263) =        843.1  [cm-1]   --> E_g             R  
+     omega(262 -263) =        843.1  [cm-1]   --> E_g*            R  
+     omega(264 -264) =        843.4  [cm-1]   --> A_u             I  
+     omega(265 -265) =        845.9  [cm-1]   --> A_g             R  
+     omega(266 -267) =        854.4  [cm-1]   --> E_g             R  
+     omega(266 -267) =        854.4  [cm-1]   --> E_g*            R  
+     omega(268 -269) =        854.8  [cm-1]   --> E_u             I  
+     omega(268 -269) =        854.8  [cm-1]   --> E_u*            I  
+     omega(270 -270) =        864.2  [cm-1]   --> A_u             I  
+     omega(271 -271) =        864.3  [cm-1]   --> A_g             R  
+     omega(272 -273) =        934.0  [cm-1]   --> E_u             I  
+     omega(272 -273) =        934.0  [cm-1]   --> E_u*            I  
+     omega(274 -274) =        935.0  [cm-1]   --> A_u             I  
+     omega(275 -276) =        937.2  [cm-1]   --> E_u             I  
+     omega(275 -276) =        937.2  [cm-1]   --> E_u*            I  
+     omega(277 -278) =        937.9  [cm-1]   --> E_g             R  
+     omega(277 -278) =        937.9  [cm-1]   --> E_g*            R  
+     omega(279 -279) =        940.0  [cm-1]   --> A_u             I  
+     omega(280 -280) =        940.2  [cm-1]   --> A_g             R  
+     omega(281 -282) =        941.6  [cm-1]   --> E_g             R  
+     omega(281 -282) =        941.6  [cm-1]   --> E_g*            R  
+     omega(283 -284) =        944.9  [cm-1]   --> E_u             I  
+     omega(283 -284) =        944.9  [cm-1]   --> E_u*            I  
+     omega(285 -285) =        945.3  [cm-1]   --> A_g             R  
+     omega(286 -286) =        948.3  [cm-1]   --> A_u             I  
+     omega(287 -288) =        949.2  [cm-1]   --> E_g             R  
+     omega(287 -288) =        949.2  [cm-1]   --> E_g*            R  
+     omega(289 -289) =        957.6  [cm-1]   --> A_g             R  
+     omega(290 -290) =        958.3  [cm-1]   --> A_u             I  
+     omega(291 -291) =        964.3  [cm-1]   --> A_g             R  
+     omega(292 -292) =        967.5  [cm-1]   --> A_g             R  
+     omega(293 -294) =        969.6  [cm-1]   --> E_u             I  
+     omega(293 -294) =        969.6  [cm-1]   --> E_u*            I  
+     omega(295 -296) =        970.7  [cm-1]   --> E_g             R  
+     omega(295 -296) =        970.7  [cm-1]   --> E_g*            R  
+     omega(297 -297) =        975.3  [cm-1]   --> A_u             I  
+
+ **************************************************************************
+ 
+     PHONON       :     1d    8h56m CPU        1d   10h25m WALL
+
+     INITIALIZATION: 
+     phq_setup    :      2.62s CPU      5.03s WALL (       1 calls)
+     phq_init     :     16.07s CPU     16.30s WALL (       1 calls)
+ 
+     phq_init     :     16.07s CPU     16.30s WALL (       1 calls)
+     set_drhoc    :      0.21s CPU      0.21s WALL (       1 calls)
+     init_vloc    :      0.05s CPU      0.05s WALL (       1 calls)
+     init_us_1    :      2.37s CPU      2.82s WALL (       1 calls)
+     newd         :      1.16s CPU      1.16s WALL (       1 calls)
+     cmpt_qdipol  :      0.00s CPU      0.00s WALL (       1 calls)
+ 
+     DIELECTRIC CONSTANT AND EFFECTIVE CHARGES:
+ 
+     DYNAMICAL MATRIX:
+     phqscf       : 117972.79s CPU 123140.07s WALL (       1 calls)
+     dynmatrix    :    150.33s CPU    154.24s WALL (       1 calls)
+ 
+     phqscf       : 117972.79s CPU 123140.07s WALL (       1 calls)
+     solve_linter : 115359.42s CPU 120213.25s WALL (       6 calls)
+     drhodv       :    193.75s CPU    200.03s WALL (       6 calls)
+     add_zstar_ue :      6.16s CPU     24.58s WALL (       6 calls)
+     add_zstar_us :   2399.17s CPU   2430.57s WALL (       6 calls)
+ 
+ 
+ 
+     phqscf       : 117972.79s CPU 123140.07s WALL (       1 calls)
+     solve_linter : 115359.42s CPU 120213.25s WALL (       6 calls)
+ 
+     solve_linter : 115359.42s CPU 120213.25s WALL (       6 calls)
+     dvqpsi_us    :   7030.61s CPU   7048.39s WALL (      40 calls)
+     ortho        :   2618.34s CPU   2628.95s WALL (     456 calls)
+     cgsolve      : 101519.58s CPU 103685.66s WALL (     456 calls)
+     incdrhoscf   :   1403.46s CPU   1471.06s WALL (     456 calls)
+     addusddens   :     37.49s CPU     38.48s WALL (      57 calls)
+     vpsifft      :   1073.63s CPU   1135.85s WALL (     416 calls)
+     dv_of_drho   :     16.56s CPU     17.27s WALL (     114 calls)
+     mix_pot      :      9.99s CPU     27.63s WALL (      57 calls)
+     psymdvscf    :     69.93s CPU     72.63s WALL (      57 calls)
+     newdq        :     82.54s CPU     82.97s WALL (      57 calls)
+     adddvscf     :    602.64s CPU    604.69s WALL (     416 calls)
+     drhodvus     :      9.70s CPU     32.61s WALL (       6 calls)
+ 
+     dvqpsi_us    :   7030.61s CPU   7048.39s WALL (      40 calls)
+     dvqpsi_us_on :   6841.57s CPU   6851.48s WALL (      40 calls)
+ 
+     cgsolve      : 101519.58s CPU 103685.66s WALL (     456 calls)
+     ch_psi       :  89963.48s CPU  92106.44s WALL (   15084 calls)
+ 
+     ch_psi       :  89963.48s CPU  92106.44s WALL (   15084 calls)
+     h_psiq       :  47787.86s CPU  49713.66s WALL (   15084 calls)
+     last         :  42166.71s CPU  42306.97s WALL (   15084 calls)
+ 
+     h_psiq       :  47787.86s CPU  49713.66s WALL (   15084 calls)
+     firstfft     :  12321.21s CPU  12878.31s WALL ( 4041740 calls)
+     secondfft    :  11992.24s CPU  13265.66s WALL ( 4041740 calls)
+     add_vuspsi   :   7043.80s CPU   7112.67s WALL (   15084 calls)
+ 
+     incdrhoscf   :   1403.46s CPU   1471.06s WALL (     456 calls)
+     addusdbec    :    320.73s CPU    323.97s WALL (     456 calls)
+ 
+     drhodvus     :      9.70s CPU     32.61s WALL (       6 calls)
+ 
+      General routines
+     calbec       :  23936.70s CPU  23983.03s WALL (   32440 calls)
+     fft          :     58.47s CPU     61.84s WALL (    5283 calls)
+     ffts         :    109.48s CPU    113.14s WALL (    1822 calls)
+     fftw         :  26060.54s CPU  28162.66s WALL ( 8805784 calls)
+     davcio       :      0.41s CPU    155.01s WALL (    4586 calls)
+     write_rec    :     46.65s CPU   2649.17s WALL (      63 calls)
+ 

@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Feb 15 12:55:02 2016
+
+@author: Kane
+"""
+
+import pandas as pd
+
+df = pd.read_csv("titanic.csv")
+
+#Transforming the data
+df2 = df.dropna()
+
+df3 = df.dropna(subset=['Age'])
+df3.head()
+df3 = df.Age.dropna()
+
+
+df4 = df
+df4 = df4.loc[df4.Age.notnull()]
+
+df['Age'].median()
+df['Age'] = df['Age'].fillna(df['Age'].median())
+
+df.loc[df['Sex'] == 'male']
+df.loc[df['Sex'] == 'male', 'Sex']
+df.loc[df["Sex"] == "male", "Sex"] = "M"
+df.loc[df["Sex"] == "female", "Sex"] = "F"
+
+
+#Who were the titanic passangers?
+import seaborn as sns
+sns.factorplot("Sex", data=df, kind="count")
+sns.factorplot("Pclass", data = df, kind = 'count')
+sns.factorplot("Pclass", data=df, hue="Sex", kind = "count")
+
+#What about the children?
+def man_woman_child(passenger):
+    age, sex = passenger
+    if age < 16:
+        return "C"
+    else:
+        return sex
+        
+
+df["who"] = df[["Age", "Sex"]].apply(man_woman_child, axis=1)
+sns.factorplot("who", data=df, kind = "count");
+pal = {'C': '#2E8B57', 'F': '#F08080', 'M': '#6495ED'}
+sns.factorplot("who", data=df, palette=pal, kind = "count");
+
+#Where were our passenger's cabin
+df["deck"] = df.Cabin.str[0]
+sns.factorplot("deck", data=df, palette="BuPu_d", kind = "count");
+sns.factorplot("deck", data=df, palette="BuPu_d", kind = "count", order = ['A','B','C','D','E','F','G','T']);
+
+df.loc[df.Cabin == 'T']
+df = df.loc[df.deck != "T"]
+sns.factorplot("deck", data=df, palette="BuPu_d", kind = "count");
+
+deckOrder = sorted(df.deck.unique())
+del deckOrder[0]
+
+sns.factorplot("deck", data=df, palette="BuPu_d", kind = "count", order = deckOrder);
+
+#How much did they pay for their tickets
+sns.factorplot("deck", "Fare", data=df, palette="PuBu_d", kind = "bar", order = deckOrder);
+A = df.loc[df["deck"] == "A"]
+A.describe()
+
+sns.factorplot("deck", "Fare", kind = 'box',data=df, order = deckOrder);
+sns.factorplot("deck", "Fare", kind = 'box',data=df, order = deckOrder).set(ylim=(0,300))
+C = df.loc[df["deck"] == "C"]
+C.describe()
+
+sns.regplot("Age", "Fare", data=df, color="seagreen")
+sns.regplot("Age", "Fare", data=df, robust=True, ci=None, color="seagreen")
+
+
+#What made people survive the sinking
+sns.factorplot("Pclass", "Survived", data=df)
+sns.factorplot("Pclass", "Survived", data=df).set(ylim=(0, 1))
+sns.factorplot("Pclass", "Survived", data=df, hue="Sex", palette=pal).set(ylim=(0, 1));
+
+df.loc[(df.Pclass == 2) & (df.Sex == 'F')].describe()
+df.loc[(df.Pclass == 1) & (df.Sex == 'M')].describe()
+
+sns.factorplot("Pclass", "Survived", data=df, hue="who", palette=pal, ci = 0).set(ylim=(0, 1));
+
+
+

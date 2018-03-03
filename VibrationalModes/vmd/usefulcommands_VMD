@@ -1,0 +1,83 @@
+grep -A 23 "ATOM" Compleate_Fe_100_2x2_H2S_FH.out | awk '{print $1, $2, $3, $4}' | sed  's/--/\n23/'
+
+FIND match word, substitute "--" by "23" and add a blank line before "23"
+
+ grep -A 23 "ATOM" Compleate_Fe_100_2x2_H2S_FH.out | awk '{print $1, $2, $3, $4}' | sed  's/--/\n    23/' | sed  's/ATOMIC_POSITIONS (angstrom)/i =        0, time = /' >OUT_4.xyz 
+
+The same as before, but now replace some lines for others
+
+grep -A 23 "ATOM" Compleate_Fe_100_2x2_H2S_FH.out | awk '{print $1, $2, $3, $4}' | sed  '/--/d'| sed  '/ATOMIC_POSITIONS (angstrom)/d' >OUT_3.xyz 
+
+Make a continues list of the coordinates removing some lines
+
+ grep -A 23 "ATOM" Compleate_Fe_100_2x2_H2S_FH.out | awk '{print $1, $2, $3, $4}' | sed  's/--/    23/' | sed  's/ATOMIC_POSITIONS (angstrom)/ i =        0, time =        0.000, E =     -1674.2653724068/' > OUT_5.xyz
+
+CORRECT COMMANDS FOR VMD XYZ ANIMATION
+
+FOR VMD script tlc
+
+#For getting .tga
+set nf [molinfo top get numframes] 
+for {set i 0} {$i < $nf} {incr i} {     
+    render POV3 vmdscene${i}.pov "/prog/x86_64/povray/povray-3.7-stable/bin/povray" +W716 +H853 -Ivmdscene${i}.pov -Ovmdscene${i}.tga  +D +X +P +A +FT +UA }
+
+#For getting png
+set nf [molinfo top get numframes]
+for {set i 0} {$i < $nf} {incr i} {           
+    render POV3 vmdscene${i}.pov "/prog/x86_64/povray/povray-3.7-stable/bin/povray" +W716 +H853 -Ivmdscene${i}.pov -Ovmdscene${i}.png  +D +X +P +A +FN +UA }
+
+set nf [molinfo top get numframes]
+for {set i 0} {$i < $nf} {incr i} {
+    render POV3 vmdscene.[format "%04d" $i].pov "/prog/x86_64/povray/povray-3.7-stable/bin/povray" +W716 +H853 -Ivmdscene.[format "%04d" $i].pov -Ovmdscene.[format "%04d" $i].png  +D +X +P +A +FN +UA }
+
+#Forgetting ppm
+set nf [molinfo top get numframes]
+for {set i 0} {$i < $nf} {incr i} {           
+    render POV3 vmdscene${i}.pov "/prog/x86_64/povray/povray-3.7-stable/bin/povray" +W716 +H853 -Ivmdscene${i}.pov -Ovmdscene${i}.ppm  +D +X +P +A +FP +UA }
+
+set nf [molinfo top get numframes]
+for {set i 0} {$i < $nf} {incr i} {
+    render POV3 vmdsceneppm.[format "%04d" $i].pov "/prog/x86_64/povray/povray-3.7-stable/bin/povray" +W716 +H853 -Ivmdsceneppm.[format "%04d" $i].pov -Ovmdsceneppm.[format "%04d" $i].ppm  +D +X +P +A +FP +UA }
+
+From http://www.ks.uiuc.edu/Research/vmd/mailing_list/vmd-l/19252.html
+set nf [molinfo top get numframes] 
+# Mind the line break after -I 
+for {set i 0} {$i < $nf} {incr i} { 
+  render POV3 vmdscene${i}.pov "/usr/bin/povray_" +W1280 +H1024 -I \ 
+  vmdscene${i}.pov -O vmdscene${i}.png +D +X +A +FN +UA 
+} 
+ 
+#Once rendered with VMD option POVRAY Do
+
+#For getting png
+#Set first the number of frames "nf"+1
+for  i in $(seq 10 99) ; do "/prog/x86_64/povray/povray-3.7-stable/bin/povray"  +W716 +H853 -Ivmdscene.000${i}.pov -Ovmdscene.000${i}.png  +D +X +P +A +FN +UA ; done
+for  i in $(seq 0 10) ; do "/prog/x86_64/povray/povray-3.7-stable/bin/povray"  +W716 +H853 -Ivmdscene.0000${i}.pov -Ovmdscene.0000${i}.png  +D +X +P +A +FN +UA ; done
+for  i in $(seq 100 191 ) ; do "/prog/x86_64/povray/povray-3.7-stable/bin/povray"  +W716 +H853 -Ivmdscene.00${i}.pov -Ovmdscene.00${i}.png  +D +X +P +A +FN +UA ; done
+
+for n in $(seq 0 9) ; do povray +W716 +H853 -Imode12_O.0000${n}.pov -Omode12_O.0000${n}.png +D +X +P +A +FN +UA ; done
+for n in $(seq 10 99) ; do povray +W716 +H853 -Imode12_O.000${n}.pov -Omode12_O.000${n}.png +D +X +P +A +FN +UA ; done
+for n in $(seq 100 359) ; do povray +W716 +H853 -Imode12_O.00${n}.pov -Omode12_O.00${n}.png +D +X +P +A +FN +UA ; done
+
+# For making the movie I used convert:
+convert -delay 10 $(ls -v vmdscene.*.png) output.gif
+convert -delay 10 -loop 4 $(ls -v vmdscene.*.png) output2.gif
+convert -loop 4 $(ls -v vmdscene.*.png) output3.gif  # -delay 4 keeps every frame displayed for 1 second (4/100)
+convert  vmdscene.*.png output4.gif
+convert -delay 100 -loop 0 mode12_O.*.png mode12_vmd_1.gif  # -delay 100 keeps every frame displayed for 1 second (100/100); -loop 0 means repeat the loop infinitely
+    
+
+render POV3 vmdscene${i}.pov "/prog/x86_64/povray/povray-3.7-stable/bin/povray" +W716 +H853 -Ivmdscene${i}.pov -Ovmdscene${i}.png  +D +X +P +A +FN +UA }
+
+
+From VMD we get ppm files, so:
+for  i in $(seq 10 99) ; do convert rockandroll.000$i.ppm rockandroll.000$i.jpg; done
+
+FRom:http://www.ks.uiuc.edu/Research/vmd/workshop/main/node8.html
+        set frame 0
+        for {set i 0} {$i < 360} {incr i 20} {
+                set filename snap.[format "%04d" $frame].rgb
+                render snapshot $filename
+                incr frame
+                rotate y by 20
+        }

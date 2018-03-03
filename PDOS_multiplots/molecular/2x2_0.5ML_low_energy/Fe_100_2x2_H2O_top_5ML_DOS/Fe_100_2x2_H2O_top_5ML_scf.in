@@ -1,0 +1,80 @@
+&control
+    calculation='scf'
+    restart_mode='from_scratch',
+    pseudo_dir = '/work/e05/e05/ablar/QE_PSEUDO',
+    outdir='./results_Fe_100_2x2_H2O_top_5ML_dos'
+    prefix='Fe_100_2x2_H2O_top_5ML'
+    wf_collect = .true.
+    tprnfor = .true.
+    tstress=.true.
+    nstep=1000
+    etot_conv_thr=1.0D-5
+    forc_conv_thr=1.0D-4
+    verbosity='high'
+    disk_io='default'
+    max_seconds=86000
+
+ /
+ &system
+    ibrav=0,
+    celldm(1)=1.889726878
+    nat=26 ,
+    ntyp= 3,
+    ecutwfc = 95, ecutrho = 800,
+    occupations='smearing', smearing='mv', degauss=0.04,
+    nspin=2,
+    starting_magnetization(1)= 0.6
+    input_DFT='PBE'
+    lda_plus_u = .true.,
+    Hubbard_U(1) = 1.d-10,
+ /
+ &electrons
+    diagonalization='david'
+    electron_maxstep=1000
+    conv_thr = 1.0e-8
+    mixing_beta = 0.5
+    mixing_mode='local-TF'
+ /
+ &ions
+ /
+ &cell
+   press=0.0
+   press_conv_thr=0.1
+ /
+ATOMIC_SPECIES
+Fe 55.85 Fe.pbe-spn-kjpaw_psl.0.2.1.UPF
+O 16 O.pbe-n-kjpaw_psl.0.1.UPF
+H  1  H.pbe-kjpaw_psl.0.1.upf
+ATOMIC_POSITIONS (angstrom)
+Fe       0.000000000   0.000000000  -2.832506000    0   0   0
+Fe       0.000000000   2.832506000  -2.832506000    0   0   0
+Fe       2.832506000   0.000000000  -2.832506000    0   0   0
+Fe       2.832506000   2.832506000  -2.832506000    0   0   0
+Fe       1.416253000   1.416253000  -1.416253000    0   0   0
+Fe       1.416253000  -1.416253000  -1.416253000    0   0   0
+Fe      -1.416253000   1.416253000  -1.416253000    0   0   0
+Fe      -1.416253000  -1.416253000  -1.416253000    0   0   0
+Fe       0.000000000   0.000000000   0.000000000    0   0   0
+Fe       0.000000000   2.832506000   0.000000000    0   0   0
+Fe       2.832506000   0.000000000   0.000000000    0   0   0
+Fe       2.832506000   2.832506000   0.000000000    0   0   0
+Fe       1.428040020   1.430093221   1.431697490
+Fe       1.427479942  -1.428952083   1.432465336
+Fe      -1.427183478   1.423756312   1.428797081
+Fe      -1.428836282  -1.425881623   1.433268741
+Fe       0.007444172   0.003321069   2.780919671
+Fe      -0.019076277   2.831391746   2.798524247
+Fe       2.834244422   0.004919838   2.801936761
+Fe       2.836040181   2.824094055   2.966590219
+O       -1.958224242  -0.304075572   5.818518530
+H       -2.407113796   0.556764791   5.923653334
+H       -1.398139848  -0.175716447   5.014594122
+O        2.636900398   2.914965149   5.189680351
+H        2.958030894   3.812297615   5.499061086
+H        1.670130133   2.931493499   5.320508494
+CELL_PARAMETERS
+   0.566501200000E+01   0.000000000000E+00   0.000000000000E+00
+   0.627132595447E-15   0.566501200000E+01   0.000000000000E+00
+   0.000000000000E+00   0.000000000000E+00   18.00000000000
+K_POINTS (automatic)
+4 4 1 0 0 0

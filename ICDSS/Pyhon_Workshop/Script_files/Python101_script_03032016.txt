@@ -1,0 +1,118 @@
+#Python 101 script
+ruthmcasado@gmail.com
+### opens the interactive development enviornment
+#Type spyder in cmd or terminal to open the IDE
+
+### Store variables (Slide 22)
+var1 = 15 #integer
+string1 = 'Hello World' #string
+boo1 = True #boolean
+
+###Print the variables (Slide 22)
+print var1
+print string1
+print boo1
+
+###Store lists (Slide 24)
+list1 = [1,2,3,4,5]
+list2 =['a','b','c','d']
+
+###Print lists (Slide 24)
+print list1
+print list2[2]
+print list2[1:3]
+
+###list functions (Slide 25)
+list2[1] = "z" #updating
+del list2[1] #deleting
+list2.append("e") #appending
+list2 = list2[2:] #slicing
+len([1, 2, 3]) #length
+[1, 2, 3] + [4, 5, 6] #concatenation
+['Hi!'] * 4 #repetition
+3 in [1, 2, 3] #membership
+for x in [1, 2, 3]: print x, #iteration
+
+### inclass assignments hints (Slide 26)
+#list
+l = []
+l.append("one")
+l.append("two")
+print l
+
+### Store dictionaries (Slide 27)
+stuff = {'name': 'John', 'age': 30, 'height': 6*12+2}
+
+### print dictionary (Slide 27)
+print stuff
+print stuff['name']
+
+### update dictionary (Slide 27)
+stuff['age'] = 31
+print stuff['age']
+
+### inclass assignments hints (Slide 28)
+#dictionary 
+dict = {}
+dict = {'name': 'John', 'age': 30, 'height': 6*12+2}
+print dict
+dict['name'] = 'Kane'
+print dict['name']
+
+### define functions (Slide 30)
+def func(a,b):
+	return a + b
+
+print func(1,2) #print function
+def func2(a,b):
+	print a
+	print b
+print func2("one","two")
+
+
+#if statements: (Slide 31)
+def func(a):
+	if a == True: #if this is true do the following
+		print "yay it works"
+
+test = True #assign a test variable
+func(test) #run the function
+
+def func(a):
+	if a == True:
+		print "true!"
+	else:
+		print "not True :("
+
+test = "hi"
+func(test)
+
+
+## for loops (Slide 34)
+fruits = ['banana', 'apple', 'mango'] #make a list
+for fruit in fruits: #for every item in the list fruit
+	print 'current fruit:', fruit #print fruit
+
+##hints for statement (slide 35)
+#3%2 = 1, 5%2 = 1. 
+#Also add to a list using list.append()
+
+#Reading data into python (Slide 38)
+import pandas as pd #import the panda package
+d2 = pd.read_csv ("D2_data.csv") #read the file D2_data.csv
+print d2['Sales'].sum() #print the sum of sales
+
+#Numpy (Slide 39)
+import numpy as np #import the numpy package
+print np.random.randn(5) #print 5 random numbers
+
+#DataFrames (Slide 40)
+print d2.head() #print the top five rows
+print d2.loc[3] #print row 3
+print d2.loc[3]['Sales'] #print sales in row 3
+
+#DataFrames - Pandas (Slide 41)
+s = pd.Series(np.random.randn(5), index = ['a','b','c','d','e']) 
+print s
+
+
